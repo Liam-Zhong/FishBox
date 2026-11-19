@@ -1,0 +1,17 @@
+{
+ "rod_types": [
+  {
+   "id": "lure",
+   "zh-CN": "路亚"
+  },
+  {
+   "id": "pond",
+   "zh-CN": "池钓"
+  },
+  {
+   "id": "simple",
+   "zh-CN": "简易"
+  }
+ ],
+ "note": "具体鱼竿(新竹/山楂/金波…)与鱼饵仅在 bold_redline_fish 详情页读到，尚未建库"
+}

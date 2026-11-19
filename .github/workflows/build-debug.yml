@@ -1,0 +1,101 @@
+name: Build and Release APK
+
+
+
+on:
+
+  push:
+
+    branches: [ "main", "master" ]
+
+    tags:
+
+      - 'v*'
+
+  workflow_dispatch:
+
+
+
+
+permissions:
+
+  contents: write
+
+
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+
+
+    steps:
+
+      - name: 1. Checkout Code
+
+        uses: actions/checkout@v4
+
+
+      - name: 2. Download fish images
+
+        shell: pwsh
+        run: ./tools/download_images.ps1
+        
+        
+      - name: 3. Configure JDK 17
+
+        uses: actions/setup-java@v4
+
+        with:
+
+          distribution: 'temurin'
+
+          java-version: '17'
+
+
+
+      - name: 4. Configure Gradle
+
+        uses: gradle/actions/setup-gradle@v4
+
+        with:
+
+          gradle-version: "8.13"
+
+
+
+      - name: 5. Build Debug APK
+
+        run: gradle assembleDebug --stacktrace
+
+
+
+      - name: 6. Uplod APK
+
+        uses: actions/upload-artifact@v4
+
+        with:
+
+          name: FishCodex-debug-apk
+
+          path: app/build/outputs/apk/debug/*.apk
+
+          if-no-files-found: error
+
+
+
+      - name: 7. Pulish GitHub Releases
+
+
+        if: startsWith(github.ref, 'refs/tags/v')
+
+        uses: softprops/action-gh-release@v2
+
+        with:
+
+          files: app/build/outputs/apk/debug/*.apk
+
+          generate_release_notes: true
+

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 仅用于 Compose 绘制之前的窗口底色，避免启动时闪烁；应用内颜色全部来自 MaterialTheme -->
+    <color name="window_background">#FFF8F4</color>
+</resources>

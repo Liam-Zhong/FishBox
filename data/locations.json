@@ -1,0 +1,58 @@
+[
+ {
+  "id": "boulder",
+  "zh-CN": "巨石",
+  "rods": [
+   "lure"
+  ]
+ },
+ {
+  "id": "dock",
+  "zh-CN": "码头",
+  "rods": [
+   "lure"
+  ]
+ },
+ {
+  "id": "ice_hole",
+  "zh-CN": "冰洞",
+  "rods": [
+   "pond"
+  ]
+ },
+ {
+  "id": "midstream",
+  "zh-CN": "河中央",
+  "rods": [
+   "lure"
+  ]
+ },
+ {
+  "id": "pond",
+  "zh-CN": "池塘",
+  "rods": [
+   "pond"
+  ]
+ },
+ {
+  "id": "river_bend",
+  "zh-CN": "河湾",
+  "rods": [
+   "lure"
+  ]
+ },
+ {
+  "id": "riverside",
+  "zh-CN": "岸边",
+  "rods": [
+   "lure"
+  ]
+ },
+ {
+  "id": "wreckage",
+  "zh-CN": "沉船",
+  "rods": [
+   "lure"
+  ]
+ }
+]

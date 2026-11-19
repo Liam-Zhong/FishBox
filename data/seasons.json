@@ -1,0 +1,18 @@
+[
+ {
+  "id": "spring",
+  "zh-CN": "春天"
+ },
+ {
+  "id": "summer",
+  "zh-CN": "夏天"
+ },
+ {
+  "id": "autumn",
+  "zh-CN": "秋天"
+ },
+ {
+  "id": "winter",
+  "zh-CN": "冬天"
+ }
+]

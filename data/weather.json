@@ -1,0 +1,30 @@
+[
+ {
+  "id": "foggy",
+  "zh-CN": "雾天"
+ },
+ {
+  "id": "heavy_rain",
+  "zh-CN": "大雨"
+ },
+ {
+  "id": "heavy_snow",
+  "zh-CN": "大雪"
+ },
+ {
+  "id": "light_rain",
+  "zh-CN": "小雨"
+ },
+ {
+  "id": "light_snow",
+  "zh-CN": "小雪"
+ },
+ {
+  "id": "meteor_shower",
+  "zh-CN": "流星雨"
+ },
+ {
+  "id": "sunny",
+  "zh-CN": "晴天"
+ }
+]
