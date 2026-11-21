@@ -30,6 +30,12 @@ class SortingTest {
         assertEquals(listOf("a1", "b2"), s[1].fish.map { it.id })
     }
 
+    @Test fun fight_descending_reversesGroupOrder() {
+        val s = buildSections(shown, SortMode.FIGHT, emptyList(), fightDescending = true)
+        assertEquals(listOf("3", "1"), s.map { it.key })
+        assertEquals(listOf("a1", "b2"), s[0].fish.map { it.id })
+    }
+
     @Test fun game_followsTabOrder_andSkipsFilteredOutFish() {
         val tabs = listOf(listOf("c1", "a1", "zzz"), listOf("b2"))
         val s = buildSections(shown, SortMode.GAME, tabs)

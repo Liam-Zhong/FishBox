@@ -13,9 +13,10 @@ class FilterTest {
         locations: List<String> = emptyList(),
         rods: List<String> = emptyList(),
         rodKinds: Set<String> = emptySet(),
+        gear: String? = null,
     ) = Fish(
         id = id, name = id, pinyin = id, initial = 'A', description = "", tag = "",
-        rods = rods, gear = null, fight = 1,
+        rods = rods, gear = gear, fight = 1,
         locations = locations, times = times, weather = weather, seasons = seasons,
         prices = listOf(1, 2, 3, 4, 5), rarityNames = null, rodKinds = rodKinds,
         body = Color.Red, fin = Color.Blue, shape = 0,
@@ -49,6 +50,13 @@ class FilterTest {
         assertEquals(listOf("pondfish2", "both"), all.filter { Filters(rods = setOf("pond")).matches(it, emptySet()) }.map { it.id })
         assertEquals(listOf("ballet", "both"), all.filter { Filters(rods = setOf("lure")).matches(it, emptySet()) }.map { it.id })
         assertEquals(1, Filters(rods = setOf("pond")).activeCount)
+    }
+
+    @Test fun gear_filter_matchesLightOrHeavy() {
+        val all = listOf(fish("l", gear = "light"), fish("h", gear = "heavy"), fish("n", gear = null))
+        assertEquals(listOf("l"), all.filter { Filters(gears = setOf("light")).matches(it, emptySet()) }.map { it.id })
+        assertEquals(listOf("l", "h"), all.filter { Filters(gears = setOf("light", "heavy")).matches(it, emptySet()) }.map { it.id })
+        assertEquals(1, Filters(gears = setOf("heavy")).activeCount)
     }
 
     @Test fun status_starred_usesFollowList() {

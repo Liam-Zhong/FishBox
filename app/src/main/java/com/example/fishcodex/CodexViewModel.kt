@@ -21,7 +21,7 @@ sealed interface LoadState {
 }
 
 /**
- * 筛选条件：搜索词 + 状态(0 全部/1 已集齐/2 未集齐/3 已关注) + 季节、时间、天气、地点、鱼竿。
+ * 筛选条件：搜索词 + 状态(0 全部/1 已集齐/2 未集齐/3 已关注) + 季节、时间、天气、地点、鱼竿、配件（轻型/重型）。
  * 同一类别内多选为"或"，不同类别之间为"且"。
  * 鱼竿按出没地点推导（池塘/冰洞=池钓，其余地点=路亚），见 Fish.rodKinds。
  */
@@ -33,8 +33,9 @@ data class Filters(
     val weathers: Set<String> = emptySet(),
     val locations: Set<String> = emptySet(),
     val rods: Set<String> = emptySet(),
+    val gears: Set<String> = emptySet(),
 ) {
-    val activeCount: Int get() = seasons.size + times.size + weathers.size + locations.size + rods.size
+    val activeCount: Int get() = seasons.size + times.size + weathers.size + locations.size + rods.size + gears.size
 
     /** 筛选面板里的条件是否生效（搜索词不算：搜索框本身就在列表顶部可见） */
     val isActive: Boolean get() = status != 0 || activeCount > 0
@@ -53,7 +54,8 @@ fun Filters.matches(f: Fish, done: Set<String>, starred: Set<String> = emptySet(
         (times.isEmpty() || f.times.any { it in times }) &&
         (weathers.isEmpty() || f.weather.any { it in weathers }) &&
         (locations.isEmpty() || f.locations.any { it in locations }) &&
-        (rods.isEmpty() || f.rodKinds.any { it in rods })
+        (rods.isEmpty() || f.rodKinds.any { it in rods }) &&
+        (gears.isEmpty() || (f.gear != null && f.gear in gears))
 }
 
 /** 等待用户确认的恢复操作 */
@@ -210,6 +212,7 @@ class CodexViewModel(app: Application) : AndroidViewModel(app) {
     fun toggleWeather(w: String) = _filters.update { it.copy(weathers = it.weathers.toggled(w)) }
     fun toggleLocation(l: String) = _filters.update { it.copy(locations = it.locations.toggled(l)) }
     fun toggleRod(r: String) = _filters.update { it.copy(rods = it.rods.toggled(r)) }
+    fun toggleGear(g: String) = _filters.update { it.copy(gears = it.gears.toggled(g)) }
 
     /** 清除筛选面板里的条件（保留搜索词） */
     fun clearFilters() = _filters.update { Filters(query = it.query) }
@@ -219,6 +222,7 @@ class CodexViewModel(app: Application) : AndroidViewModel(app) {
     fun setDynamicColor(enabled: Boolean) = updateSettings { it.copy(dynamicColor = enabled) }
     fun setCardSize(size: Int) = updateSettings { it.copy(cardSize = size) }
     fun setSortMode(mode: SortMode) = updateSettings { it.copy(sortMode = mode) }
+    fun setFightDescending(desc: Boolean) = updateSettings { it.copy(fightDescending = desc) }
 
     private fun updateSettings(transform: (AppSettings) -> AppSettings) {
         val new = transform(_settings.value)

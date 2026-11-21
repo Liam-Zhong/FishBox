@@ -140,6 +140,7 @@ fun AppearanceDialog(
     onDynamicColor: (Boolean) -> Unit,
     onCardSize: (Int) -> Unit,
     onSortMode: (SortMode) -> Unit,
+    onFightDescending: (Boolean) -> Unit,
     onDismiss: () -> Unit,
 ) {
     val supported = DYNAMIC_COLOR_SUPPORTED
@@ -183,6 +184,24 @@ fun AppearanceDialog(
                 Text("排序方式", style = MaterialTheme.typography.titleSmall, color = MaterialTheme.colorScheme.primary)
                 SortMode.values().forEach { m ->
                     RadioRow(m.label, settings.sortMode == m) { onSortMode(m) }
+                }
+                if (settings.sortMode == SortMode.FIGHT) {
+                    Row(
+                        Modifier.fillMaxWidth()
+                            .toggleable(value = settings.fightDescending, role = Role.Switch, onValueChange = onFightDescending)
+                            .padding(start = 12.dp, top = 4.dp, bottom = 4.dp),
+                        verticalAlignment = Alignment.CenterVertically,
+                    ) {
+                        Column(Modifier.weight(1f)) {
+                            Text("倒序", style = MaterialTheme.typography.bodyLarge)
+                            Text(
+                                if (settings.fightDescending) "由难到易（Lv.6 → Lv.1）" else "由易到难（Lv.1 → Lv.6）",
+                                style = MaterialTheme.typography.bodySmall,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            )
+                        }
+                        Switch(checked = settings.fightDescending, onCheckedChange = null)
+                    }
                 }
                 Text(
                     "「游戏内顺序」按游戏图鉴的两个页签排列，固定每行显示 3 条鱼。",

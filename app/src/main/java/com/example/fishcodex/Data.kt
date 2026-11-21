@@ -30,10 +30,17 @@ val TIME_ZH = mapOf(
 val ROD_ZH = mapOf("lure" to "路亚", "pond" to "池钓", "simple" to "简易")
 /** 筛选里的鱼竿选项（简易竿与地点无关，不参与按地点推导） */
 val ROD_FILTER_ORDER = listOf("lure", "pond")
+
+/** 配件分类（站点的"配件"筛选）：fish.json 里的 gear 字段，轻型 / 重型 */
+val GEAR_ZH = mapOf("light" to "轻型", "heavy" to "重型")
+val GEAR_ORDER = listOf("light", "heavy")
 val SEASON_ORDER = listOf("spring", "summer", "autumn", "winter")
 val LOC_ORDER = listOf("riverside", "dock", "river_bend", "midstream", "boulder", "wreckage", "pond", "ice_hole")
 val TIME_ORDER = listOf("after_midnight", "dawn", "morning", "afternoon", "dusk", "night")
 val WEATHER_ORDER = listOf("sunny", "foggy", "light_rain", "heavy_rain", "light_snow", "heavy_snow", "meteor_shower")
+
+/** 游戏里的一把具体鱼竿（data/rods.json）：kind=lure/pond/simple，gear=light/heavy */
+data class Rod(val id: String, val name: String, val kind: String, val gear: String)
 
 data class Fish(
     val id: String,
@@ -53,6 +60,8 @@ data class Fish(
     val rarityNames: List<String>?,
     /** 按出没地点推导出的鱼竿类型（lure=路亚，pond=池钓）；站点原始的 rods 字段原样保留 */
     val rodKinds: Set<String> = emptySet(),
+    /** 能钓上这条鱼的具体鱼竿（来自 data/fish_rods.json，已按出没地点过滤）；没有数据时为空 */
+    val usableRods: List<Rod> = emptyList(),
     val rarityDescs: List<String>? = null,
     val biteTier: String? = null,
     val isNew: Boolean = false,
@@ -110,8 +119,37 @@ fun loadGameOrder(ctx: Context): List<List<String>> = try {
     emptyList()
 }
 
+fun loadRods(ctx: Context): Map<String, Rod> = try {
+    val arr = JSONArray(ctx.assets.open("rods.json").bufferedReader().use { it.readText() })
+    (0 until arr.length()).map { arr.getJSONObject(it) }
+        .associate { o -> o.getString("id") to Rod(o.getString("id"), o.getString("name"), o.getString("kind"), o.getString("gear")) }
+} catch (e: Exception) {
+    emptyMap()
+}
+
+/** fish_rods.json：鱼 id → 可用鱼竿 id 列表；文件缺失时为空，界面回退显示鱼竿类型 */
+fun loadFishRods(ctx: Context): Map<String, List<String>> = try {
+    val o = JSONObject(ctx.assets.open("fish_rods.json").bufferedReader().use { it.readText() }).getJSONObject("rods")
+    o.keys().asSequence().associateWith { k -> o.getJSONArray(k).strings() }
+} catch (e: Exception) {
+    emptyMap()
+}
+
+/**
+ * 详情里"鱼竿"一行显示什么：只有一把具体鱼竿能钓上来时，只显示那把鱼竿的名字；
+ * 否则显示鱼竿类型（按出没地点判断：路亚/池钓；用得上简易竿时再加"简易"）。
+ */
+fun Fish.rodDisplay(): String {
+    if (usableRods.size == 1) return usableRods[0].name
+    val kinds = ROD_FILTER_ORDER.filter { it in rodKinds }.map { ROD_ZH[it] ?: it }.toMutableList()
+    if (usableRods.any { it.kind == "simple" }) kinds += ROD_ZH["simple"] ?: "简易"
+    return kinds.joinToString("/")
+}
+
 fun loadFish(ctx: Context): List<Fish> {
     val locRods = loadLocationRods(ctx)
+    val rods = loadRods(ctx)
+    val fishRods = loadFishRods(ctx)
     val text = ctx.assets.open("fish.json").bufferedReader().use { it.readText() }
     val arr = JSONArray(text)
     val list = List(arr.length()) { i ->
@@ -123,6 +161,7 @@ fun loadFish(ctx: Context): List<Fish> {
         val rd = o.optJSONObject("rarity_descriptions_zh")
         val h = (Math.abs(id.hashCode()) % 360).toFloat()
         val locations = o.getJSONArray("locations").strings()
+        val kinds = locations.flatMap { locRods[it].orEmpty() }.toSet()
         Fish(
             id = id,
             name = o.getJSONObject("name").getString("zh-CN"),
@@ -139,7 +178,8 @@ fun loadFish(ctx: Context): List<Fish> {
             seasons = seasons,
             prices = QUALITY_IDS.map { pr.getInt(it) },
             rarityNames = rn?.let { r -> QUALITY_IDS.map { r.getString(it) } },
-            rodKinds = locations.flatMap { locRods[it].orEmpty() }.toSet(),
+            rodKinds = kinds,
+            usableRods = (fishRods[id] ?: emptyList()).mapNotNull { rods[it] }.filter { it.kind == "simple" || it.kind in kinds },
             rarityDescs = rd?.let { r -> QUALITY_IDS.map { r.optString(it, "") } },
             biteTier = if (o.isNull("bite_tier_zh")) null else o.optString("bite_tier_zh"),
             isNew = o.optBoolean("is_new", false),

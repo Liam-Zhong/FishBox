@@ -322,11 +322,8 @@ fun FishDetail(
         InfoLine("时间", fish.times.joinToString("、") { TIME_ZH[it] ?: it })
         InfoLine("天气", fish.weather.joinToString("、") { WEATHER_ZH[it] ?: it })
         InfoLine("季节", fish.seasons.joinToString("、") { SEASON_ZH[it] ?: it })
-        InfoLine(
-            "鱼竿",
-            ROD_FILTER_ORDER.filter { it in fish.rodKinds }.joinToString("/") { ROD_ZH[it] ?: it } +
-                when (fish.gear) { "light" -> "（轻型）"; "heavy" -> "（重型）"; else -> "" }
-        )
+        InfoLine("鱼竿", fish.rodDisplay())
+        if (fish.gear != null) InfoLine("配件", GEAR_ZH[fish.gear] ?: fish.gear)
         InfoLine("搏斗难度", "${fish.fight} / 6")
         
 

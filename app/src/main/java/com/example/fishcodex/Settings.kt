@@ -11,7 +11,7 @@ enum class ThemeMode(val label: String) {
 /** 列表排序方式：首字母（默认）/ 搏斗难度 / 游戏内顺序（游戏图鉴的两个页签，每行 3 条） */
 enum class SortMode(val label: String) {
     ALPHABET("首字母"),
-    FIGHT("搏斗难度（由易到难）"),
+    FIGHT("搏斗难度"),
     GAME("游戏内顺序"),
 }
 
@@ -25,6 +25,8 @@ data class AppSettings(
     val cardSize: Int = 0,
     val lastBackupAt: Long = 0L,
     val sortMode: SortMode = SortMode.ALPHABET,
+    /** 搏斗难度排序是否倒序（由难到易） */
+    val fightDescending: Boolean = false,
 )
 
 class SettingsStore(ctx: Context) {
@@ -38,6 +40,7 @@ class SettingsStore(ctx: Context) {
             dynamicColor = prefs.getBoolean("dynamic_color", true),
             cardSize = prefs.getInt("card_size", 0).coerceIn(0, CARD_MIN_DP.size - 1),
             lastBackupAt = prefs.getLong("last_backup_at", 0L),
+            fightDescending = prefs.getBoolean("fight_desc", false),
             sortMode = SortMode.values().getOrElse(prefs.getInt("sort_mode", 0)) { SortMode.ALPHABET },
         )
     }
@@ -49,6 +52,7 @@ class SettingsStore(ctx: Context) {
             .putInt("card_size", s.cardSize)
             .putLong("last_backup_at", s.lastBackupAt)
             .putInt("sort_mode", s.sortMode.ordinal)
+            .putBoolean("fight_desc", s.fightDescending)
             .apply()
     }
 }

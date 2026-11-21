@@ -24,6 +24,16 @@ class DataValidationTest {
         assertEquals("游戏内顺序必须覆盖全部鱼", fishIds, all.toSet())
     }
 
+    @Test fun rods_andFishRods_areConsistent() {
+        val rodIds = idSet(JSONArray(read("rods.json")))
+        val fishIds = idSet(JSONArray(read("fish.json")))
+        val fr = JSONObject(read("fish_rods.json")).getJSONObject("rods")
+        for (k in fr.keys()) {
+            assertTrue("$k 不是已知的鱼", k in fishIds)
+            assertTrue("$k 的鱼竿 id 不在 rods.json 里", rodIds.containsAll(strings(fr.getJSONArray(k))))
+        }
+    }
+
     @Test fun everyLocation_hasARodKind() {
         val locs = JSONArray(read("locations.json"))
         val rods = idSet(JSONObject(read("equipment.json")).getJSONArray("rod_types"))

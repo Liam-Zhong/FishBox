@@ -1,0 +1,25 @@
+{
+ "note": "每条鱼可用的具体鱼竿（鱼竿 id 见 rods.json）。这里只预置了已核对过的 3 条；运行 tools/fetch_fish_rods.bat（CI 里会自动运行）会从站点逐条抓取并覆盖生成完整数据。没有数据的鱼，App 回退显示鱼竿类型。",
+ "rods": {
+  "bold_redline_fish": [
+   "green_bamboo",
+   "hawthorn",
+   "golden_ripple",
+   "icicle",
+   "first_snow",
+   "ducky",
+   "papyrus",
+   "stick"
+  ],
+  "seven_stars": [
+   "deep_winter",
+   "moss"
+  ],
+  "unknown_fossil": [
+   "jade_bamboo",
+   "golden_tide",
+   "frost",
+   "toy_truck"
+  ]
+ }
+}

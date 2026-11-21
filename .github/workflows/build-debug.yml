@@ -44,6 +44,10 @@ jobs:
         run: ./tools/download_images.ps1
         
         
+      - name: 2b. Fetch fish rod data
+        shell: pwsh
+        run: ./tools/fetch_fish_rods.ps1
+
       - name: 3. Configure JDK 17
 
         uses: actions/setup-java@v4

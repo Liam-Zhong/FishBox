@@ -181,6 +181,7 @@ fun CodexApp(vm: CodexViewModel) {
             toggleWeather = vm::toggleWeather,
             toggleLocation = vm::toggleLocation,
             toggleRod = vm::toggleRod,
+            toggleGear = vm::toggleGear,
             clear = vm::clearFilters,
         )
     }
@@ -303,6 +304,7 @@ fun CodexApp(vm: CodexViewModel) {
                         filters = filters,
                         cardMinDp = CARD_MIN_DP[settings.cardSize.coerceIn(0, CARD_MIN_DP.size - 1)],
                         sortMode = settings.sortMode,
+                        fightDescending = settings.fightDescending,
                         gameTabs = state.gameTabs,
                         padding = padding,
                         searchTick = searchTick,
@@ -365,6 +367,7 @@ fun CodexApp(vm: CodexViewModel) {
             onDynamicColor = vm::setDynamicColor,
             onCardSize = vm::setCardSize,
             onSortMode = vm::setSortMode,
+            onFightDescending = vm::setFightDescending,
             onDismiss = { showAppearance = false },
         )
     }
@@ -480,12 +483,14 @@ private class FilterActions(
     val toggleWeather: (String) -> Unit,
     val toggleLocation: (String) -> Unit,
     val toggleRod: (String) -> Unit,
+    val toggleGear: (String) -> Unit,
     val clear: () -> Unit,
 )
 
 /**
- * 筛选面板（底部弹出）。"中等高度"面板：默认只升到半屏，列表在后面保持可见并实时变化，
- * 上拉才展开到全屏。每个类别占固定的一行，行内可以横向滑动，所以整个面板很紧凑。
+ * 筛选面板（底部弹出）。像 Apple 的"中等高度"面板：默认只升到半屏，列表在后面保持可见并实时变化，
+ * 上拉才展开到全屏。每一行是一个固定的类别，行内可以横向滑动：
+ * 第一行 鱼竿 + 配件（轻型/重型），第二行 地点，其后依次是 状态、季节、时间、天气。
  * 条件随时可以勾选/取消，不需要先清除。按游戏里当前的季节、时间、天气勾选，就是"现在能钓到什么"
  * （游戏里的季节/时间/天气是游戏内状态，不是现实世界的时间，所以由玩家自己选择）。
  */
@@ -515,16 +520,28 @@ private fun FilterSheet(
                 }
                 TextButton(onClick = actions.clear, enabled = filters.isActive) { Text("清除全部") }
             }
+            // 第一行：鱼竿 + 配件，同一行
+            FilterLine {
+                FilterGroupLabel("鱼竿")
+                ROD_FILTER_ORDER.forEach { k ->
+                    AppFilterChip(ROD_ZH[k] ?: k, k in filters.rods) { actions.toggleRod(k) }
+                }
+                Spacer(Modifier.width(8.dp))
+                FilterGroupLabel("配件")
+                GEAR_ORDER.forEach { k ->
+                    AppFilterChip(GEAR_ZH[k] ?: k, k in filters.gears) { actions.toggleGear(k) }
+                }
+            }
+            // 第二行：地点；之后每个类别各占一行
+            FilterRow("地点", LOC_ORDER, { LOC_ZH[it] ?: it }, { it in filters.locations }, actions.toggleLocation)
             FilterRow("状态", STATUS_LABELS, { it }, { filters.status == STATUS_LABELS.indexOf(it) }) {
                 actions.setStatus(STATUS_LABELS.indexOf(it))
             }
             FilterRow("季节", SEASON_ORDER, { SEASON_ZH[it] ?: it }, { it in filters.seasons }, actions.toggleSeason)
             FilterRow("时间", TIME_ORDER, { TIME_ZH[it] ?: it }, { it in filters.times }, actions.toggleTime)
             FilterRow("天气", WEATHER_ORDER, { WEATHER_ZH[it] ?: it }, { it in filters.weathers }, actions.toggleWeather)
-            FilterRow("地点", LOC_ORDER, { LOC_ZH[it] ?: it }, { it in filters.locations }, actions.toggleLocation)
-            FilterRow("鱼竿", ROD_FILTER_ORDER, { ROD_ZH[it] ?: it }, { it in filters.rods }, actions.toggleRod)
             Text(
-                "鱼竿按出没地点判断：池塘、冰洞用池钓，其余地点用路亚。",
+                "鱼竿按出没地点判断：池塘、冰洞用池钓，其余地点用路亚。配件即鱼的重量级：轻型 / 重型。",
                 style = MaterialTheme.typography.labelSmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                 modifier = Modifier.padding(horizontal = 20.dp, vertical = 8.dp),
@@ -534,7 +551,23 @@ private fun FilterSheet(
     }
 }
 
-/** 一个筛选类别：标题 + 固定的一行，行内可横向滑动 */
+/** 一行固定的筛选：内容可横向滑动 */
+@Composable
+private fun FilterLine(content: @Composable androidx.compose.foundation.layout.RowScope.() -> Unit) {
+    Row(
+        Modifier.padding(top = 8.dp).horizontalScroll(rememberScrollState()).padding(horizontal = 20.dp),
+        horizontalArrangement = Arrangement.spacedBy(8.dp),
+        verticalAlignment = Alignment.CenterVertically,
+        content = content,
+    )
+}
+
+@Composable
+private fun FilterGroupLabel(text: String) {
+    Text(text, style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)
+}
+
+/** 一个筛选类别：标题和选项在同一行，整行可横向滑动 */
 @Composable
 private fun FilterRow(
     title: String,
@@ -543,20 +576,9 @@ private fun FilterRow(
     isSelected: (String) -> Boolean,
     onToggle: (String) -> Unit,
 ) {
-    Column(Modifier.padding(top = 12.dp)) {
-        Text(
-            title,
-            style = MaterialTheme.typography.labelLarge,
-            color = MaterialTheme.colorScheme.primary,
-            modifier = Modifier.padding(horizontal = 20.dp),
-        )
-        Spacer(Modifier.height(6.dp))
-        Row(
-            Modifier.horizontalScroll(rememberScrollState()).padding(horizontal = 20.dp),
-            horizontalArrangement = Arrangement.spacedBy(8.dp),
-        ) {
-            options.forEach { o -> AppFilterChip(label(o), isSelected(o)) { onToggle(o) } }
-        }
+    FilterLine {
+        FilterGroupLabel(title)
+        options.forEach { o -> AppFilterChip(label(o), isSelected(o)) { onToggle(o) } }
     }
 }
 
@@ -580,6 +602,7 @@ private fun CodexContent(
     filters: Filters,
     cardMinDp: Int,
     sortMode: SortMode,
+    fightDescending: Boolean,
     gameTabs: List<List<String>>,
     padding: PaddingValues,
     searchTick: Int,
@@ -592,7 +615,9 @@ private fun CodexContent(
     val shown = remember(fishList, done, starred, filters) {
         fishList.filter { filters.matches(it, done, starred) }
     }
-    val sections = remember(shown, sortMode, gameTabs) { buildSections(shown, sortMode, gameTabs) }
+    val sections = remember(shown, sortMode, fightDescending, gameTabs) {
+        buildSections(shown, sortMode, gameTabs, fightDescending)
+    }
     val keys = remember(sections) { sections.map { it.key } }
     val leading = 1 + (if (filters.isActive) 1 else 0) // 搜索框 + 可能出现的"已选条件"行
     // 每个分组标题在网格中的位置，用于右侧索引跳转
@@ -607,7 +632,7 @@ private fun CodexContent(
     }
     val gridState = rememberLazyGridState()
     val focusRequester = remember { FocusRequester() }
-    LaunchedEffect(filters, sortMode) { gridState.scrollToItem(0) }
+    LaunchedEffect(filters, sortMode, fightDescending) { gridState.scrollToItem(0) }
     LaunchedEffect(searchTick) {
         if (searchTick > 0) {
             gridState.animateScrollToItem(0)
@@ -699,6 +724,7 @@ private fun ActiveFilterChips(filters: Filters, actions: FilterActions, onEdit: 
         WEATHER_ORDER.filter { it in filters.weathers }.forEach { k -> add((WEATHER_ZH[k] ?: k) to { actions.toggleWeather(k) }) }
         LOC_ORDER.filter { it in filters.locations }.forEach { k -> add((LOC_ZH[k] ?: k) to { actions.toggleLocation(k) }) }
         ROD_FILTER_ORDER.filter { it in filters.rods }.forEach { k -> add((ROD_ZH[k] ?: k) to { actions.toggleRod(k) }) }
+        GEAR_ORDER.filter { it in filters.gears }.forEach { k -> add((GEAR_ZH[k] ?: k) to { actions.toggleGear(k) }) }
     }
     Row(
         Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()),

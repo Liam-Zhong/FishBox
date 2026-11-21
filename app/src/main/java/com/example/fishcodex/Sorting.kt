@@ -7,9 +7,15 @@ data class Section(val key: String, val title: String, val fish: List<Fish>)
  * 把（已筛选的）鱼按排序方式分组。传入的 shown 已按拼音排好序，所以每个分组内部都保持拼音顺序。
  * 游戏内顺序：按 gameTabs 给出的页签与顺序排列；没出现在页签里的鱼放在最后的"其他"。
  */
-fun buildSections(shown: List<Fish>, mode: SortMode, gameTabs: List<List<String>>): List<Section> = when (mode) {
+fun buildSections(
+    shown: List<Fish>,
+    mode: SortMode,
+    gameTabs: List<List<String>>,
+    fightDescending: Boolean = false,
+): List<Section> = when (mode) {
     SortMode.ALPHABET -> alphabetSections(shown)
-    SortMode.FIGHT -> shown.groupBy { it.fight }.toSortedMap()
+    SortMode.FIGHT -> shown.groupBy { it.fight }
+        .toSortedMap(if (fightDescending) compareByDescending<Int> { it } else compareBy<Int> { it })
         .map { (level, list) -> Section(level.toString(), "搏斗 Lv.$level", list) }
     SortMode.GAME -> if (gameTabs.isEmpty()) alphabetSections(shown) else gameSections(shown, gameTabs)
 }
