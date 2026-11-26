@@ -1,0 +1,42 @@
+{
+ "note": "网站筛选图标的下载地址（已获得站长授权）。把每个选项的图标 URL 填进来后运行 tools/download_ui_icons.bat，会下载到 app/src/main/assets/ui_icons/ 并命名为 <类别>_<选项>.<扩展名>（支持 webp、png）。也可以直接把图标文件按这个命名放进该目录。空字符串 = 暂无。",
+ "icons": {
+  "weather": {
+   "foggy": "",
+   "heavy_rain": "",
+   "heavy_snow": "",
+   "light_rain": "",
+   "light_snow": "",
+   "meteor_shower": "",
+   "sunny": ""
+  },
+  "time": {
+   "after_midnight": "",
+   "dawn": "",
+   "morning": "",
+   "afternoon": "",
+   "dusk": "",
+   "night": ""
+  },
+  "season": {
+   "spring": "",
+   "summer": "",
+   "autumn": "",
+   "winter": ""
+  },
+  "location": {
+   "riverside": "",
+   "dock": "",
+   "river_bend": "",
+   "midstream": "",
+   "boulder": "",
+   "wreckage": "",
+   "pond": "",
+   "ice_hole": ""
+  },
+  "gear": {
+   "light": "",
+   "heavy": ""
+  }
+ }
+}

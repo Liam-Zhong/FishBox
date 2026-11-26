@@ -1,0 +1,3484 @@
+[
+ {
+  "id": "seven_stars",
+  "name": {
+   "zh-CN": "七星刀"
+  },
+  "description": {
+   "zh-CN": "这种鱼几乎不摆尾，而是靠腹鳍的波动推进。常在阴影中安静地捕猎，以身侧斑点迷惑敌人。出手迅捷，不留反应时间。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/seven_stars",
+  "gear": "heavy",
+  "rods": [
+   "pond"
+  ],
+  "fight": 2,
+  "locations": [
+   "pond",
+   "ice_hole"
+  ],
+  "times": [
+   "after_midnight",
+   "night"
+  ],
+  "weather": [
+   "sunny",
+   "foggy"
+  ],
+  "seasons": [
+   "autumn",
+   "winter"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 5,
+   "rare": 12,
+   "epic": 28,
+   "legendary": 76
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "很好",
+  "unverified": [],
+  "pinyin": "qi xing dao"
+ },
+ {
+  "id": "unknown_fossil",
+  "name": {
+   "zh-CN": "不明化石"
+  },
+  "description": {
+   "zh-CN": "某种未知生物的化石。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/unknown_fossil",
+  "gear": "heavy",
+  "rods": [
+   "lure"
+  ],
+  "fight": 5,
+  "locations": [
+   "wreckage"
+  ],
+  "times": [
+   "dawn",
+   "night"
+  ],
+  "weather": [
+   "sunny",
+   "heavy_snow"
+  ],
+  "seasons": [
+   "spring",
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 5,
+   "uncommon": 12,
+   "rare": 28,
+   "epic": 69,
+   "legendary": 184
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "一般",
+  "unverified": [],
+  "pinyin": "bu ming hua shi"
+ },
+ {
+  "id": "unknown_device",
+  "name": {
+   "zh-CN": "不明的机械"
+  },
+  "description": {
+   "zh-CN": "你想前往过去，还是回到未来？"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/unknown_device",
+  "gear": "heavy",
+  "rods": [
+   "lure"
+  ],
+  "fight": 5,
+  "locations": [
+   "wreckage"
+  ],
+  "times": [
+   "after_midnight",
+   "morning"
+  ],
+  "weather": [
+   "light_snow",
+   "heavy_snow"
+  ],
+  "seasons": [
+   "autumn",
+   "winter"
+  ],
+  "sell_price_treats": {
+   "standard": 5,
+   "uncommon": 12,
+   "rare": 28,
+   "epic": 69,
+   "legendary": 184
+  },
+  "rarity_names_zh": {
+   "standard": "远古晶石",
+   "uncommon": "原始骨刀",
+   "rare": "冰封橡果",
+   "epic": "剑齿虎头骨",
+   "legendary": "不明的机械"
+  },
+  "rarity_descriptions_zh": {
+   "standard": "看起来曾是某对爱侣的信物。",
+   "uncommon": "这把刀似乎曾归属于一只独眼鼬。",
+   "rare": "某只松鼠无法割舍的执念。",
+   "epic": "据说生前曾与猛犸象和树懒共同生活。",
+   "legendary": "你想前往过去，还是回到未来？"
+  },
+  "bite_tier_zh": "较低",
+  "unverified": [],
+  "pinyin": "bu ming de ji xie"
+ },
+ {
+  "id": "janitor_fish",
+  "name": {
+   "zh-CN": "保洁鱼"
+  },
+  "description": {
+   "zh-CN": "对居住环境的清洁要求极高，每天夜里都在河湾附近，用自己的身体摩擦清洁河底的岩石，久而久之就染上了河底岩石的颜色。如果和发财鲤一起生活，就可能摩擦出现稀少的金色鳞片。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/janitor_fish",
+  "gear": "light",
+  "rods": [
+   "lure"
+  ],
+  "fight": 2,
+  "locations": [
+   "boulder",
+   "wreckage",
+   "midstream",
+   "river_bend"
+  ],
+  "times": [
+   "after_midnight",
+   "night"
+  ],
+  "weather": [
+   "sunny",
+   "foggy"
+  ],
+  "seasons": [
+   "summer",
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 5,
+   "rare": 12,
+   "epic": 28,
+   "legendary": 76
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "良好",
+  "unverified": [],
+  "pinyin": "bao jie yu"
+ },
+ {
+  "id": "lightspot_fish",
+  "name": {
+   "zh-CN": "光斑鱼"
+  },
+  "description": {
+   "zh-CN": "一种喜欢模仿水底波纹的鱼类。在极光、日食出现期间出生的个体身体上会有罕见的异色波纹。白天常在河中央游弋。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/lightspot_fish",
+  "gear": "light",
+  "rods": [
+   "lure"
+  ],
+  "fight": 2,
+  "locations": [
+   "riverside",
+   "dock",
+   "midstream",
+   "river_bend"
+  ],
+  "times": [
+   "morning",
+   "dusk"
+  ],
+  "weather": [
+   "sunny",
+   "foggy"
+  ],
+  "seasons": [
+   "summer",
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 5,
+   "rare": 12,
+   "epic": 28,
+   "legendary": 76
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "良好",
+  "unverified": [],
+  "pinyin": "guang ban yu"
+ },
+ {
+  "id": "glacial_sturgeon",
+  "name": {
+   "zh-CN": "冰河鲟"
+  },
+  "description": {
+   "zh-CN": "当冰川遇上岩浆时，刺骨的冰川中会诞生的鱼类。部分个体几乎完全由蓝冰构成。常在夜晚出没于沉船地带。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/glacial_sturgeon",
+  "gear": "heavy",
+  "rods": [
+   "lure"
+  ],
+  "fight": 3,
+  "locations": [
+   "boulder",
+   "wreckage",
+   "midstream"
+  ],
+  "times": [
+   "after_midnight",
+   "night"
+  ],
+  "weather": [
+   "foggy",
+   "light_snow",
+   "heavy_snow"
+  ],
+  "seasons": [
+   "spring",
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 3,
+   "uncommon": 7,
+   "rare": 17,
+   "epic": 40,
+   "legendary": 107
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "一般",
+  "unverified": [],
+  "pinyin": "bing he xun"
+ },
+ {
+  "id": "icicle_fish",
+  "name": {
+   "zh-CN": "冰溜子鱼"
+  },
+  "description": {
+   "zh-CN": "会把脑袋探出水面，饮用冰溜子融化滴落的水。据说最罕见的个体会把自己伪装成冰溜子，这样喝水时不会被冰溜子发现。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/icicle_fish",
+  "gear": "light",
+  "rods": [
+   "lure"
+  ],
+  "fight": 4,
+  "locations": [
+   "boulder",
+   "midstream"
+  ],
+  "times": [
+   "dawn",
+   "night"
+  ],
+  "weather": [
+   "foggy",
+   "heavy_snow"
+  ],
+  "seasons": [
+   "spring",
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 4,
+   "uncommon": 9,
+   "rare": 22,
+   "epic": 54,
+   "legendary": 144
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "一般",
+  "unverified": [],
+  "pinyin": "bing liu zi yu"
+ },
+ {
+  "id": "blade_fish",
+  "name": {
+   "zh-CN": "刃鱼"
+  },
+  "description": {
+   "zh-CN": "身体薄如刀刃，流线型的身体让它速度极快。它有一个特别的癖好：喜欢和水面掠过的海鸟比拼速度。虽然胜率高达 0%，但它从不服输，直到某天它因为冲得太猛，直接飞进了路过渔船的平底锅里。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/blade_fish",
+  "gear": "light",
+  "rods": [
+   "pond"
+  ],
+  "fight": 3,
+  "locations": [
+   "pond"
+  ],
+  "times": [
+   "afternoon",
+   "night"
+  ],
+  "weather": [
+   "light_rain",
+   "heavy_rain"
+  ],
+  "seasons": [
+   "summer",
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 3,
+   "uncommon": 7,
+   "rare": 16,
+   "epic": 40,
+   "legendary": 107
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "良好",
+  "unverified": [],
+  "pinyin": "ren yu"
+ },
+ {
+  "id": "stego_fish",
+  "name": {
+   "zh-CN": "剑龙鱼"
+  },
+  "description": {
+   "zh-CN": "据说恐龙并未完全灭绝。它们最后的一个族群跳入海中，想方设法存活了下来，最终演化成了适应水底生活的模样。虽然体型变小，但背上那排骨板依然倔强地挺立着，证明着它们曾经的霸主身份。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/stego_fish",
+  "gear": "heavy",
+  "rods": [
+   "lure"
+  ],
+  "fight": 6,
+  "locations": [
+   "midstream"
+  ],
+  "times": [
+   "after_midnight",
+   "dusk"
+  ],
+  "weather": [
+   "foggy",
+   "light_rain"
+  ],
+  "seasons": [
+   "spring",
+   "summer"
+  ],
+  "sell_price_treats": {
+   "standard": 6,
+   "uncommon": 13,
+   "rare": 31,
+   "epic": 75,
+   "legendary": 203
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "较低",
+  "unverified": [],
+  "pinyin": "jian long yu"
+ },
+ {
+  "id": "snob_fish",
+  "name": {
+   "zh-CN": "势利眼"
+  },
+  "description": {
+   "zh-CN": "总是一副抬着下巴看人的傲慢面孔，毕生追求就是跻身上流社会。极少数真正爬上顶层的“成功鱼士”便极尽奢华地用黄金装点自己，誓要彻底与贫穷划清界限。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/snob_fish",
+  "gear": "light",
+  "rods": [
+   "pond"
+  ],
+  "fight": 2,
+  "locations": [
+   "pond"
+  ],
+  "times": [
+   "dawn",
+   "dusk"
+  ],
+  "weather": [
+   "sunny",
+   "foggy"
+  ],
+  "seasons": [
+   "spring"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 5,
+   "rare": 12,
+   "epic": 28,
+   "legendary": 76
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": null,
+  "unverified": [
+   "bite_tier_zh"
+  ],
+  "pinyin": "shi li yan"
+ },
+ {
+  "id": "glam_loach",
+  "name": {
+   "zh-CN": "华丽鳅"
+  },
+  "description": {
+   "zh-CN": "每天要花五个小时打理身上的条纹，只因它们确信自己是斑马的远房亲戚。如果条纹不对称，会焦虑得游不动路。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/glam_loach",
+  "gear": "light",
+  "rods": [
+   "lure",
+   "pond",
+   "simple"
+  ],
+  "fight": 1,
+  "locations": [
+   "pond"
+  ],
+  "times": [
+   "dawn",
+   "dusk"
+  ],
+  "weather": [
+   "foggy",
+   "light_rain"
+  ],
+  "seasons": [
+   "spring"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 4,
+   "rare": 8,
+   "epic": 20,
+   "legendary": 53
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": null,
+  "unverified": [
+   "bite_tier_zh"
+  ],
+  "pinyin": "hua li qiu"
+ },
+ {
+  "id": "fortune_carp",
+  "name": {
+   "zh-CN": "发财鲤"
+  },
+  "description": {
+   "zh-CN": "据说能带来财运的鲤鱼，白天常在河湾出没。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/fortune_carp",
+  "gear": "heavy",
+  "rods": [
+   "lure"
+  ],
+  "fight": 4,
+  "locations": [
+   "riverside",
+   "river_bend"
+  ],
+  "times": [
+   "morning",
+   "afternoon"
+  ],
+  "weather": [
+   "sunny",
+   "foggy"
+  ],
+  "seasons": [
+   "spring",
+   "summer"
+  ],
+  "sell_price_treats": {
+   "standard": 4,
+   "uncommon": 9,
+   "rare": 22,
+   "epic": 54,
+   "legendary": 144
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "较低",
+  "unverified": [],
+  "pinyin": "fa cai li"
+ },
+ {
+  "id": "ghillie_fish",
+  "name": {
+   "zh-CN": "吉利鱼"
+  },
+  "description": {
+   "zh-CN": "这个族群错把\"吉利服\"当成了最顶尖的潮流单品，其中更有走火入魔的个体为了硬凹造型，连眼睛都不愿露出。如果你在钓起一团水草时感觉它在疯狂挣扎，别怀疑，你抓到了一个正在走秀的时尚受害者。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/ghillie_fish",
+  "gear": "heavy",
+  "rods": [
+   "lure"
+  ],
+  "fight": 4,
+  "locations": [
+   "riverside",
+   "river_bend"
+  ],
+  "times": [
+   "dawn",
+   "dusk"
+  ],
+  "weather": [
+   "foggy",
+   "light_rain"
+  ],
+  "seasons": [
+   "spring",
+   "summer"
+  ],
+  "sell_price_treats": {
+   "standard": 4,
+   "uncommon": 9,
+   "rare": 22,
+   "epic": 54,
+   "legendary": 144
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "一般",
+  "unverified": [],
+  "pinyin": "ji li yu"
+ },
+ {
+  "id": "dopey_catfish",
+  "name": {
+   "zh-CN": "呆呆鲶"
+  },
+  "description": {
+   "zh-CN": "呆头呆脑的表象之下，其实已经参透了宇宙的真谛。外界再也无法窥见它们心中的真实想法。夜里常在河湾附近沉思。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/dopey_catfish",
+  "gear": "heavy",
+  "rods": [
+   "lure"
+  ],
+  "fight": 2,
+  "locations": [
+   "boulder",
+   "wreckage",
+   "midstream",
+   "river_bend"
+  ],
+  "times": [
+   "after_midnight",
+   "night"
+  ],
+  "weather": [
+   "foggy",
+   "light_snow"
+  ],
+  "seasons": [
+   "summer",
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 5,
+   "rare": 12,
+   "epic": 28,
+   "legendary": 76
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "良好",
+  "unverified": [],
+  "pinyin": "dai dai nian"
+ },
+ {
+  "id": "pouty_fish",
+  "name": {
+   "zh-CN": "嘟嘟鱼"
+  },
+  "description": {
+   "zh-CN": "懒得动弹，就撅着嘴去够食物，久而久之便成了如今这副模样。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/pouty_fish",
+  "gear": "heavy",
+  "rods": [
+   "pond"
+  ],
+  "fight": 2,
+  "locations": [
+   "pond",
+   "ice_hole"
+  ],
+  "times": [
+   "morning",
+   "dusk"
+  ],
+  "weather": [
+   "sunny",
+   "light_snow"
+  ],
+  "seasons": [
+   "autumn",
+   "winter"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 5,
+   "rare": 12,
+   "epic": 28,
+   "legendary": 76
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "很好",
+  "unverified": [],
+  "pinyin": "du du yu"
+ },
+ {
+  "id": "underbite_fish",
+  "name": {
+   "zh-CN": "地包天鱼"
+  },
+  "description": {
+   "zh-CN": "因对自己天生的外表感到不自信，毕生追求着游历世界，学习最新的时尚潮流，再回到家乡。最远曾去到过北方的冰川，但那种时尚似乎很难被大众接受，也很少见。习惯夜行于码头附近。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/underbite_fish",
+  "gear": "heavy",
+  "rods": [
+   "lure",
+   "pond"
+  ],
+  "fight": 1,
+  "locations": [
+   "riverside",
+   "dock",
+   "boulder",
+   "wreckage",
+   "midstream",
+   "river_bend"
+  ],
+  "times": [
+   "dawn",
+   "night"
+  ],
+  "weather": [
+   "foggy",
+   "light_snow",
+   "heavy_snow"
+  ],
+  "seasons": [
+   "spring",
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 4,
+   "rare": 8,
+   "epic": 20,
+   "legendary": 53
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "极佳",
+  "unverified": [],
+  "pinyin": "di bao tian yu"
+ },
+ {
+  "id": "glowing_pearl",
+  "name": {
+   "zh-CN": "夜明珠"
+  },
+  "description": {
+   "zh-CN": "从贝壳中诞生的圆润宝珠，常在白天活动于巨石附近，吸收日光精华，因此在夜幕下会泛起微光。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/glowing_pearl",
+  "gear": "light",
+  "rods": [
+   "lure"
+  ],
+  "fight": 3,
+  "locations": [
+   "boulder",
+   "wreckage",
+   "midstream"
+  ],
+  "times": [
+   "morning",
+   "afternoon"
+  ],
+  "weather": [
+   "sunny",
+   "foggy"
+  ],
+  "seasons": [
+   "autumn",
+   "winter"
+  ],
+  "sell_price_treats": {
+   "standard": 3,
+   "uncommon": 7,
+   "rare": 16,
+   "epic": 40,
+   "legendary": 107
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "一般",
+  "unverified": [],
+  "pinyin": "ye ming zhu"
+ },
+ {
+  "id": "master_turtle",
+  "name": {
+   "zh-CN": "大师龟"
+  },
+  "description": {
+   "zh-CN": "据说只有绝世高手眼周才会呈现红色，而功夫初学者则会在眼周涂红以模仿。但真正开悟的修行者会踏实修行，身上的龟甲布满历练的痕迹。喜爱白天在岸边与同伴切磋比试。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/master_turtle",
+  "gear": "light",
+  "rods": [
+   "lure",
+   "pond",
+   "simple"
+  ],
+  "fight": 1,
+  "locations": [
+   "riverside",
+   "dock",
+   "boulder",
+   "wreckage",
+   "midstream",
+   "river_bend"
+  ],
+  "times": [
+   "morning",
+   "afternoon"
+  ],
+  "weather": [
+   "sunny",
+   "light_snow"
+  ],
+  "seasons": [
+   "spring",
+   "summer"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 4,
+   "rare": 8,
+   "epic": 20,
+   "legendary": 53
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "很好",
+  "unverified": [],
+  "pinyin": "da shi gui"
+ },
+ {
+  "id": "reagent_fish",
+  "name": {
+   "zh-CN": "大罐子鱼"
+  },
+  "description": {
+   "zh-CN": "热爱化学的鱼。从一出生就在寻找并吞食特殊的化学物质。调配完成后，体内会结晶出瓶状结构，装着神秘的试剂成品。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/reagent_fish",
+  "gear": "heavy",
+  "rods": [
+   "lure",
+   "pond"
+  ],
+  "fight": 1,
+  "locations": [
+   "pond",
+   "ice_hole"
+  ],
+  "times": [
+   "afternoon",
+   "dusk"
+  ],
+  "weather": [
+   "sunny",
+   "light_snow"
+  ],
+  "seasons": [
+   "autumn",
+   "winter"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 4,
+   "rare": 8,
+   "epic": 20,
+   "legendary": 53
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "极佳",
+  "unverified": [],
+  "pinyin": "da guan zi yu"
+ },
+ {
+  "id": "antenna_fish",
+  "name": {
+   "zh-CN": "天线鱼"
+  },
+  "description": {
+   "zh-CN": "拥有一张永远在状况外的空洞面孔。体型虽小，却倔强地在背上竖起一面高耸的旗鳍。它们坚持认为这根巨大的骨刺是用来接收宇宙信号的，但至今还什么都没接收到。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/antenna_fish",
+  "gear": "light",
+  "rods": [
+   "pond"
+  ],
+  "fight": 2,
+  "locations": [
+   "pond"
+  ],
+  "times": [
+   "dusk",
+   "night"
+  ],
+  "weather": [
+   "foggy",
+   "light_rain"
+  ],
+  "seasons": [
+   "summer",
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 5,
+   "rare": 12,
+   "epic": 28,
+   "legendary": 76
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "很好",
+  "unverified": [],
+  "pinyin": "tian xian yu"
+ },
+ {
+  "id": "weird_stuff",
+  "name": {
+   "zh-CN": "奇怪的东西"
+  },
+  "description": {
+   "zh-CN": "留着吧，说不定能派上用场。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/weird_stuff",
+  "gear": "heavy",
+  "rods": [
+   "lure"
+  ],
+  "fight": 3,
+  "locations": [
+   "riverside",
+   "dock",
+   "boulder"
+  ],
+  "times": [
+   "after_midnight",
+   "dawn"
+  ],
+  "weather": [
+   "sunny",
+   "foggy"
+  ],
+  "seasons": [
+   "autumn",
+   "winter"
+  ],
+  "sell_price_treats": {
+   "standard": 3,
+   "uncommon": 7,
+   "rare": 17,
+   "epic": 40,
+   "legendary": 107
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "良好",
+  "unverified": [],
+  "pinyin": "qi guai de dong xi"
+ },
+ {
+  "id": "radiodonta",
+  "name": {
+   "zh-CN": "奇虾"
+  },
+  "description": {
+   "zh-CN": "远古海洋中的神秘生物，曾经统治了一整片海域。它们坚信自己拥有最先进的捕猎技术，巨大的前肢能够解决一切问题。可惜经过漫长岁月，它们最大的用途只剩下一条……帮自己挠挠背。"
+  },
+  "is_new": true,
+  "detail_url": "https://animals.party/zh-CN/fish/radiodonta",
+  "gear": "heavy",
+  "rods": [
+   "pond"
+  ],
+  "fight": 4,
+  "locations": [
+   "pond"
+  ],
+  "times": [
+   "after_midnight",
+   "night"
+  ],
+  "weather": [
+   "meteor_shower"
+  ],
+  "seasons": [
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 4,
+   "uncommon": 9,
+   "rare": 22,
+   "epic": 54,
+   "legendary": 144
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "一般",
+  "unverified": [],
+  "pinyin": "qi xia"
+ },
+ {
+  "id": "cry_fish",
+  "name": {
+   "zh-CN": "娃娃鱼"
+  },
+  "description": {
+   "zh-CN": "很爱哭的一种鱼，据说哭泣的原因是，它其实不是鱼。凌晨时分常在巨石附近以泪洗面。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/cry_fish",
+  "gear": "heavy",
+  "rods": [
+   "lure"
+  ],
+  "fight": 3,
+  "locations": [
+   "riverside",
+   "boulder",
+   "river_bend"
+  ],
+  "times": [
+   "after_midnight",
+   "dawn"
+  ],
+  "weather": [
+   "sunny",
+   "foggy"
+  ],
+  "seasons": [
+   "summer",
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 3,
+   "uncommon": 7,
+   "rare": 17,
+   "epic": 40,
+   "legendary": 107
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "良好",
+  "unverified": [],
+  "pinyin": "wa wa yu"
+ },
+ {
+  "id": "astro_fish",
+  "name": {
+   "zh-CN": "宇航鱼"
+  },
+  "description": {
+   "zh-CN": "总是幻想自己身处太空的小鱼。它们坚持不摘头盔，只为聆听那里面闷闷的回响，假装自己正孤独地漂浮在银河系边缘。千万别打扰它，它很享受这种孤独感。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/astro_fish",
+  "gear": "light",
+  "rods": [
+   "pond"
+  ],
+  "fight": 2,
+  "locations": [
+   "pond"
+  ],
+  "times": [
+   "morning",
+   "dusk"
+  ],
+  "weather": [
+   "sunny",
+   "foggy"
+  ],
+  "seasons": [
+   "spring",
+   "summer"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 5,
+   "rare": 12,
+   "epic": 28,
+   "legendary": 76
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": null,
+  "unverified": [
+   "bite_tier_zh"
+  ],
+  "pinyin": "yu hang yu"
+ },
+ {
+  "id": "shimmerfin",
+  "name": {
+   "zh-CN": "宝气鱼"
+  },
+  "description": {
+   "zh-CN": "凭借一身在阳光下能折射出梦幻极光的偏光鳞片，它一直坚信自己是深海里最昂贵的高定珠宝。直到某天，一个路过的钓鱼佬一刀戳破了它的幻想，说它长得特别像某种两毛钱一包的水果糖包装纸。它那双瞪大的眼睛，就是听到这句话时被气出来的。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/shimmerfin",
+  "gear": "light",
+  "rods": [
+   "lure",
+   "pond",
+   "simple"
+  ],
+  "fight": 1,
+  "locations": [
+   "pond"
+  ],
+  "times": [
+   "dawn",
+   "morning"
+  ],
+  "weather": [
+   "light_rain",
+   "heavy_rain"
+  ],
+  "seasons": [
+   "summer",
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 4,
+   "rare": 8,
+   "epic": 20,
+   "legendary": 53
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "极佳",
+  "unverified": [],
+  "pinyin": "bao qi yu"
+ },
+ {
+  "id": "razor_fang",
+  "name": {
+   "zh-CN": "尖齿鱼"
+  },
+  "description": {
+   "zh-CN": "拥有恐怖的尖牙，性格贪婪。为了彰显自己在食物链顶端的地位，特意进化出了如同顶级皮草般的奢华花纹。穿豹纹的通常脾气比较急，穿虎纹的则比较阴险。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/razor_fang",
+  "gear": null,
+  "rods": [],
+  "fight": 2,
+  "locations": [
+   "pond"
+  ],
+  "times": [
+   "afternoon",
+   "night"
+  ],
+  "weather": [
+   "sunny",
+   "heavy_rain"
+  ],
+  "seasons": [
+   "spring",
+   "summer"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 5,
+   "rare": 12,
+   "epic": 28,
+   "legendary": 76
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": null,
+  "unverified": [
+   "bite_tier_zh",
+   "rods(站点数据里 rodTypes 为空)"
+  ],
+  "pinyin": "jian chi yu"
+ },
+ {
+  "id": "normie_fish",
+  "name": {
+   "zh-CN": "平凡鱼"
+  },
+  "description": {
+   "zh-CN": "实在是没有任何特色的鱼，即便是稀少的个体，也相貌平平。即使大白天游到岸边，都很难多看一眼。很遗憾。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/normie_fish",
+  "gear": "light",
+  "rods": [
+   "lure"
+  ],
+  "fight": 2,
+  "locations": [
+   "riverside",
+   "dock",
+   "boulder",
+   "wreckage"
+  ],
+  "times": [
+   "afternoon",
+   "dusk"
+  ],
+  "weather": [
+   "sunny",
+   "foggy"
+  ],
+  "seasons": [
+   "summer",
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 5,
+   "rare": 11,
+   "epic": 28,
+   "legendary": 76
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "良好",
+  "unverified": [],
+  "pinyin": "ping fan yu"
+ },
+ {
+  "id": "dreamscale_fish",
+  "name": {
+   "zh-CN": "幻光鱼"
+  },
+  "description": {
+   "zh-CN": "一种梦想成为霓虹灯的鱼。为了换取更加炫目的鳞片，用自己的视力与海妖做了交易，因此越稀有的个体，眼神越空洞。白天常在岸边出没，好让大家注意到它。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/dreamscale_fish",
+  "gear": "light",
+  "rods": [
+   "lure",
+   "pond"
+  ],
+  "fight": 1,
+  "locations": [
+   "riverside",
+   "dock",
+   "boulder",
+   "wreckage",
+   "midstream",
+   "river_bend"
+  ],
+  "times": [
+   "morning",
+   "afternoon"
+  ],
+  "weather": [
+   "sunny"
+  ],
+  "seasons": [
+   "summer",
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 4,
+   "rare": 8,
+   "epic": 20,
+   "legendary": 53
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "很好",
+  "unverified": [],
+  "pinyin": "huan guang yu"
+ },
+ {
+  "id": "ring",
+  "name": {
+   "zh-CN": "戒指"
+  },
+  "description": {
+   "zh-CN": "这是你掉的铁戒指、银戒指，还是金戒指？"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/ring",
+  "gear": "light",
+  "rods": [
+   "lure"
+  ],
+  "fight": 4,
+  "locations": [
+   "boulder",
+   "wreckage"
+  ],
+  "times": [
+   "dawn",
+   "night"
+  ],
+  "weather": [
+   "sunny",
+   "foggy"
+  ],
+  "seasons": [
+   "autumn",
+   "winter"
+  ],
+  "sell_price_treats": {
+   "standard": 4,
+   "uncommon": 10,
+   "rare": 22,
+   "epic": 53,
+   "legendary": 144
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "一般",
+  "unverified": [],
+  "pinyin": "jie zhi"
+ },
+ {
+  "id": "huggy_axo",
+  "name": {
+   "zh-CN": "抱抱蝾"
+  },
+  "description": {
+   "zh-CN": "因内心极度渴望友谊，它进化出了双手。只可惜手实在太短，终其一生也未能成功拥抱过任何鱼。如果你钓到了它，请给它一个拥抱。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/huggy_axo",
+  "gear": "light",
+  "rods": [
+   "lure"
+  ],
+  "fight": 5,
+  "locations": [
+   "river_bend"
+  ],
+  "times": [
+   "after_midnight",
+   "night"
+  ],
+  "weather": [
+   "light_rain",
+   "heavy_rain"
+  ],
+  "seasons": [
+   "spring",
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 5,
+   "uncommon": 12,
+   "rare": 28,
+   "epic": 69,
+   "legendary": 184
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "较低",
+  "unverified": [],
+  "pinyin": "bao bao rong"
+ },
+ {
+  "id": "rocklike_fish",
+  "name": {
+   "zh-CN": "拟岩鱼"
+  },
+  "description": {
+   "zh-CN": "擅长伪装，会拟态成看到的一切。少数视力不佳的个体会变化成闪烁着奇异光芒的怪模样，反而更显眼了。白天常在深水处活动。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/rocklike_fish",
+  "gear": "light",
+  "rods": [
+   "lure",
+   "pond"
+  ],
+  "fight": 1,
+  "locations": [
+   "riverside",
+   "dock",
+   "boulder",
+   "wreckage",
+   "midstream",
+   "river_bend"
+  ],
+  "times": [
+   "morning",
+   "afternoon"
+  ],
+  "weather": [
+   "sunny",
+   "foggy",
+   "light_snow"
+  ],
+  "seasons": [
+   "spring",
+   "summer"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 4,
+   "rare": 8,
+   "epic": 20,
+   "legendary": 53
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "很好",
+  "unverified": [],
+  "pinyin": "ni yan yu"
+ },
+ {
+  "id": "boxer_shrimp",
+  "name": {
+   "zh-CN": "拳击虾"
+  },
+  "description": {
+   "zh-CN": "十分好斗的一种虾，常在夜里聚集于岸边，举办拳击比赛。经常获胜的个体，身上印满了聚光灯的痕迹。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/boxer_shrimp",
+  "gear": "light",
+  "rods": [
+   "lure",
+   "pond"
+  ],
+  "fight": 1,
+  "locations": [
+   "riverside",
+   "dock",
+   "boulder",
+   "wreckage",
+   "midstream",
+   "river_bend"
+  ],
+  "times": [
+   "after_midnight",
+   "night"
+  ],
+  "weather": [
+   "sunny",
+   "foggy"
+  ],
+  "seasons": [
+   "spring",
+   "summer"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 4,
+   "rare": 8,
+   "epic": 20,
+   "legendary": 53
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "很好",
+  "unverified": [],
+  "pinyin": "quan ji xia"
+ },
+ {
+  "id": "copyfish",
+  "name": {
+   "zh-CN": "拷贝鱼"
+  },
+  "description": {
+   "zh-CN": "这种鱼会把曾去过地方的纹理印在身上当作炫耀。据说最稀有的个体身上会出现棋盘或金币的纹样，被作为鱼会下棋和理财的最强证据。常在午夜后来到码头附近游荡，直到日出才肯离去。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/copyfish",
+  "gear": "heavy",
+  "rods": [
+   "lure"
+  ],
+  "fight": 3,
+  "locations": [
+   "dock",
+   "midstream",
+   "river_bend"
+  ],
+  "times": [
+   "after_midnight",
+   "dawn"
+  ],
+  "weather": [
+   "sunny",
+   "foggy"
+  ],
+  "seasons": [
+   "spring",
+   "winter"
+  ],
+  "sell_price_treats": {
+   "standard": 3,
+   "uncommon": 7,
+   "rare": 17,
+   "epic": 40,
+   "legendary": 107
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "一般",
+  "unverified": [],
+  "pinyin": "kao bei yu"
+ },
+ {
+  "id": "trainer_fish",
+  "name": {
+   "zh-CN": "教练鱼"
+  },
+  "description": {
+   "zh-CN": "游泳健身了解一下？昨天没练吧？今天练吗？下午有时间吗？你见我会员了吗？"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/trainer_fish",
+  "gear": "light",
+  "rods": [
+   "lure"
+  ],
+  "fight": 3,
+  "locations": [
+   "riverside",
+   "midstream",
+   "river_bend"
+  ],
+  "times": [
+   "dusk",
+   "night"
+  ],
+  "weather": [
+   "sunny",
+   "foggy"
+  ],
+  "seasons": [
+   "summer",
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 3,
+   "uncommon": 7,
+   "rare": 16,
+   "epic": 40,
+   "legendary": 107
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "一般",
+  "unverified": [],
+  "pinyin": "jiao lian yu"
+ },
+ {
+  "id": "yakuza_fish",
+  "name": {
+   "zh-CN": "极道鱼"
+  },
+  "description": {
+   "zh-CN": "河口组的成员。地位越高的鱼，身上的纹身越复杂霸气。那些全身金黄、满背虎纹的大佬，通常统领着整条河流的保护费生意。别盯着它看，它会以为你在挑衅。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/yakuza_fish",
+  "gear": "heavy",
+  "rods": [
+   "lure",
+   "pond"
+  ],
+  "fight": 1,
+  "locations": [
+   "pond"
+  ],
+  "times": [
+   "afternoon",
+   "dusk"
+  ],
+  "weather": [
+   "sunny",
+   "heavy_rain"
+  ],
+  "seasons": [
+   "spring",
+   "summer"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 4,
+   "rare": 8,
+   "epic": 20,
+   "legendary": 53
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": null,
+  "unverified": [
+   "bite_tier_zh"
+  ],
+  "pinyin": "ji dao yu"
+ },
+ {
+  "id": "jello_fish",
+  "name": {
+   "zh-CN": "果冻鱼"
+  },
+  "description": {
+   "zh-CN": "它们最讨厌被误认为是水母的亲戚。拥有像史莱姆般柔软的身体，更能在水中悄无声息地游动，避免被捕食者发现。常在巨石附近活动，不太喜欢晒太阳。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/jello_fish",
+  "gear": "heavy",
+  "rods": [
+   "lure"
+  ],
+  "fight": 5,
+  "locations": [
+   "boulder"
+  ],
+  "times": [
+   "dawn",
+   "night"
+  ],
+  "weather": [
+   "light_snow",
+   "heavy_snow"
+  ],
+  "seasons": [
+   "autumn",
+   "winter"
+  ],
+  "sell_price_treats": {
+   "standard": 5,
+   "uncommon": 12,
+   "rare": 28,
+   "epic": 69,
+   "legendary": 184
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "一般",
+  "unverified": [],
+  "pinyin": "guo dong yu"
+ },
+ {
+  "id": "durian_turtle",
+  "name": {
+   "zh-CN": "榴莲龟"
+  },
+  "description": {
+   "zh-CN": "浑身长满尖刺的古老海龟。因防御力惊人，极少有掠食者敢对它下嘴。唯一的例外是高度近视的巨型章鱼，总把它误认成榴莲抓走试图剥皮，虽说每次都以触手扎肿而告终。为了摆脱这种烦人的骚扰，聪明的个体搞起了伪装：有的偷了岸边的遮阳伞披在身上，有的则研究出了隐身涂层，目前还在申请专利。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/durian_turtle",
+  "gear": "heavy",
+  "rods": [
+   "lure"
+  ],
+  "fight": 5,
+  "locations": [
+   "boulder"
+  ],
+  "times": [
+   "after_midnight",
+   "afternoon"
+  ],
+  "weather": [
+   "sunny",
+   "light_rain"
+  ],
+  "seasons": [
+   "summer",
+   "winter"
+  ],
+  "sell_price_treats": {
+   "standard": 5,
+   "uncommon": 12,
+   "rare": 28,
+   "epic": 69,
+   "legendary": 184
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "较低",
+  "unverified": [],
+  "pinyin": "liu lian gui"
+ },
+ {
+  "id": "pharaoh_fish",
+  "name": {
+   "zh-CN": "水法老"
+  },
+  "description": {
+   "zh-CN": "从尼罗河远道而来的庞大家族，每一片鱼鳞中都蕴藏着古老神秘文明的痕迹。据说向家族长老行礼的方式，是亲吻它的鱼尾。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/pharaoh_fish",
+  "gear": "heavy",
+  "rods": [
+   "lure",
+   "pond"
+  ],
+  "fight": 1,
+  "locations": [
+   "pond",
+   "ice_hole"
+  ],
+  "times": [
+   "afternoon",
+   "dusk"
+  ],
+  "weather": [
+   "foggy",
+   "light_snow"
+  ],
+  "seasons": [
+   "autumn",
+   "winter"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 4,
+   "rare": 8,
+   "epic": 20,
+   "legendary": 53
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "极佳",
+  "unverified": [],
+  "pinyin": "shui fa lao"
+ },
+ {
+  "id": "river_horse",
+  "name": {
+   "zh-CN": "河马"
+  },
+  "description": {
+   "zh-CN": "拥有如同战马般高傲的头部线条，脾气极其暴躁。它们总是在水底拉帮结派地发起威风凛凛的冲锋，坚信自己是海洋的铁骑。可惜因为没有脚，每次冲锋完之后，都只能尴尬地等水流把自己慢慢冲回原地。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/river_horse",
+  "gear": "heavy",
+  "rods": [
+   "lure"
+  ],
+  "fight": 6,
+  "locations": [
+   "midstream"
+  ],
+  "times": [
+   "after_midnight",
+   "morning"
+  ],
+  "weather": [
+   "light_rain",
+   "heavy_rain"
+  ],
+  "seasons": [
+   "summer",
+   "winter"
+  ],
+  "sell_price_treats": {
+   "standard": 6,
+   "uncommon": 13,
+   "rare": 31,
+   "epic": 75,
+   "legendary": 203
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "较低",
+  "unverified": [],
+  "pinyin": "he ma"
+ },
+ {
+  "id": "mud_monkey",
+  "name": {
+   "zh-CN": "泥猴子"
+  },
+  "description": {
+   "zh-CN": "喜欢在泥滩上跳来跳去的小鱼，甚至成立了街舞俱乐部。只在冬季出没于冰洞。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/mud_monkey",
+  "gear": "light",
+  "rods": [
+   "pond"
+  ],
+  "fight": 2,
+  "locations": [
+   "ice_hole"
+  ],
+  "times": [
+   "morning",
+   "afternoon"
+  ],
+  "weather": [
+   "sunny",
+   "light_snow"
+  ],
+  "seasons": [
+   "winter"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 5,
+   "rare": 12,
+   "epic": 28,
+   "legendary": 76
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": null,
+  "unverified": [
+   "bite_tier_zh"
+  ],
+  "pinyin": "ni hou zi"
+ },
+ {
+  "id": "meteor_fish",
+  "name": {
+   "zh-CN": "流星鱼"
+  },
+  "description": {
+   "zh-CN": "相信自己来自遥远宇宙的神秘鱼类。它们每天都在水中高速穿梭，模拟流星划过夜空的姿态，并期待有一天能被宇航员接回故乡。可惜目前唯一会把它们送出水面的，只有钓鱼佬手中的鱼竿。"
+  },
+  "is_new": true,
+  "detail_url": "https://animals.party/zh-CN/fish/meteor_fish",
+  "gear": "heavy",
+  "rods": [
+   "lure"
+  ],
+  "fight": 6,
+  "locations": [
+   "riverside",
+   "midstream"
+  ],
+  "times": [
+   "after_midnight",
+   "night"
+  ],
+  "weather": [
+   "meteor_shower"
+  ],
+  "seasons": [
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 6,
+   "uncommon": 13,
+   "rare": 31,
+   "epic": 75,
+   "legendary": 203
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "较低",
+  "unverified": [],
+  "pinyin": "liu xing yu"
+ },
+ {
+  "id": "hero_fish",
+  "name": {
+   "zh-CN": "流浪剑客"
+  },
+  "description": {
+   "zh-CN": "尾部佩剑，独来独往。会用尖锐的尾部吓退敌人。虽然自身体型很小，但也会努力保护别的陌生小鱼小虾。常在白天出没在岸边。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/hero_fish",
+  "gear": "light",
+  "rods": [
+   "lure"
+  ],
+  "fight": 2,
+  "locations": [
+   "riverside",
+   "dock",
+   "midstream",
+   "river_bend"
+  ],
+  "times": [
+   "morning",
+   "afternoon"
+  ],
+  "weather": [
+   "sunny"
+  ],
+  "seasons": [
+   "summer",
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 5,
+   "rare": 11,
+   "epic": 28,
+   "legendary": 76
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "良好",
+  "unverified": [],
+  "pinyin": "liu lang jian ke"
+ },
+ {
+  "id": "seahog",
+  "name": {
+   "zh-CN": "海底豚"
+  },
+  "description": {
+   "zh-CN": "深海大肥猪，体脂率极高。为了逃避运动，将自己伪装成了满脸通红的样子，假装已经力竭。深夜在沉船附近吃夜宵的时候，要是遇到教练鱼，倒也可以游得飞快。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/seahog",
+  "gear": "heavy",
+  "rods": [
+   "lure"
+  ],
+  "fight": 2,
+  "locations": [
+   "dock",
+   "boulder",
+   "wreckage",
+   "midstream"
+  ],
+  "times": [
+   "after_midnight",
+   "dawn"
+  ],
+  "weather": [
+   "foggy",
+   "light_snow"
+  ],
+  "seasons": [
+   "summer",
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 5,
+   "rare": 12,
+   "epic": 28,
+   "legendary": 76
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "良好",
+  "unverified": [],
+  "pinyin": "hai di tun"
+ },
+ {
+  "id": "fireworks_fish",
+  "name": {
+   "zh-CN": "烟花鱼"
+  },
+  "description": {
+   "zh-CN": "一种令人着迷的鱼，像微型烟花般点亮水面。它的鳞片闪烁着多彩光芒，从低调的银色到耀眼的金色，意图吸引所有目光。白天常在岸边活动，弥补着白天无法欣赏到烟花的遗憾。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/fireworks_fish",
+  "gear": "light",
+  "rods": [
+   "lure"
+  ],
+  "fight": 2,
+  "locations": [
+   "riverside",
+   "dock",
+   "wreckage",
+   "river_bend"
+  ],
+  "times": [
+   "afternoon",
+   "dusk"
+  ],
+  "weather": [
+   "sunny",
+   "foggy"
+  ],
+  "seasons": [
+   "summer",
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 5,
+   "rare": 12,
+   "epic": 28,
+   "legendary": 76
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "良好",
+  "unverified": [],
+  "pinyin": "yan hua yu"
+ },
+ {
+  "id": "lava_fish",
+  "name": {
+   "zh-CN": "熔岩鱼"
+  },
+  "description": {
+   "zh-CN": "当岩浆遇上冰川时，灼热的岩浆中会诞生的鱼类。部分个体体内沉睡着迷你小火山。常在白天出没于河中央地带。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/lava_fish",
+  "gear": "heavy",
+  "rods": [
+   "lure"
+  ],
+  "fight": 3,
+  "locations": [
+   "wreckage",
+   "midstream",
+   "river_bend"
+  ],
+  "times": [
+   "morning",
+   "dusk"
+  ],
+  "weather": [
+   "sunny"
+  ],
+  "seasons": [
+   "spring",
+   "summer"
+  ],
+  "sell_price_treats": {
+   "standard": 3,
+   "uncommon": 7,
+   "rare": 17,
+   "epic": 40,
+   "legendary": 107
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "一般",
+  "unverified": [],
+  "pinyin": "rong yan yu"
+ },
+ {
+  "id": "peony_fish",
+  "name": {
+   "zh-CN": "牡丹鱼"
+  },
+  "description": {
+   "zh-CN": "形态如盛开的牡丹花，夜间休息时则会像花苞般合拢。喜欢白天在岸边寻找能与之争奇斗艳的花朵。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/peony_fish",
+  "gear": "light",
+  "rods": [
+   "lure"
+  ],
+  "fight": 2,
+  "locations": [
+   "riverside",
+   "dock",
+   "wreckage",
+   "river_bend"
+  ],
+  "times": [
+   "morning",
+   "dusk"
+  ],
+  "weather": [
+   "sunny"
+  ],
+  "seasons": [
+   "summer",
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 5,
+   "rare": 11,
+   "epic": 28,
+   "legendary": 76
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "良好",
+  "unverified": [],
+  "pinyin": "mu dan yu"
+ },
+ {
+  "id": "doghead_fish",
+  "name": {
+   "zh-CN": "狗头鱼"
+  },
+  "description": {
+   "zh-CN": "狗头鱼身的生物，有时候会努力发出汪汪叫的声音，可惜在水面上听不到。常在巨石附近看日出和日落。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/doghead_fish",
+  "gear": "heavy",
+  "rods": [
+   "lure"
+  ],
+  "fight": 2,
+  "locations": [
+   "riverside",
+   "boulder",
+   "midstream",
+   "river_bend"
+  ],
+  "times": [
+   "dawn",
+   "dusk"
+  ],
+  "weather": [
+   "foggy",
+   "light_snow",
+   "heavy_snow"
+  ],
+  "seasons": [
+   "spring",
+   "winter"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 5,
+   "rare": 12,
+   "epic": 28,
+   "legendary": 76
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "良好",
+  "unverified": [],
+  "pinyin": "gou tou yu"
+ },
+ {
+  "id": "tarantula_crab",
+  "name": {
+   "zh-CN": "狼蛛蟹"
+  },
+  "description": {
+   "zh-CN": "带有蜘蛛基因的一种螃蟹，横行霸道的神奇造物。午后喜欢到岸边晒太阳。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/tarantula_crab",
+  "gear": "light",
+  "rods": [
+   "lure",
+   "pond",
+   "simple"
+  ],
+  "fight": 1,
+  "locations": [
+   "riverside",
+   "dock",
+   "boulder",
+   "wreckage",
+   "midstream",
+   "river_bend"
+  ],
+  "times": [
+   "afternoon",
+   "dusk"
+  ],
+  "weather": [
+   "foggy",
+   "light_snow",
+   "heavy_snow"
+  ],
+  "seasons": [
+   "summer",
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 4,
+   "rare": 8,
+   "epic": 20,
+   "legendary": 53
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "很好",
+  "unverified": [],
+  "pinyin": "lang zhu xie"
+ },
+ {
+  "id": "hognose_fish",
+  "name": {
+   "zh-CN": "猪鼻鱼"
+  },
+  "description": {
+   "zh-CN": "顾名思义，长着猪鼻的鱼，可以通过嗅闻搜寻海底松露。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/hognose_fish",
+  "gear": "light",
+  "rods": [
+   "lure"
+  ],
+  "fight": 3,
+  "locations": [
+   "boulder",
+   "midstream",
+   "river_bend"
+  ],
+  "times": [
+   "morning",
+   "dusk"
+  ],
+  "weather": [
+   "sunny",
+   "foggy"
+  ],
+  "seasons": [
+   "spring",
+   "summer"
+  ],
+  "sell_price_treats": {
+   "standard": 3,
+   "uncommon": 7,
+   "rare": 17,
+   "epic": 40,
+   "legendary": 107
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "一般",
+  "unverified": [],
+  "pinyin": "zhu bi yu"
+ },
+ {
+  "id": "pleaser_fish",
+  "name": {
+   "zh-CN": "甲方满意鱼"
+  },
+  "description": {
+   "zh-CN": "为了迎合甲方的需求，拼命改变自身外观的讨好型鱼类。据说极个别个体已经进化出了五彩斑斓的黑。工作时间才会出现在河中央。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/pleaser_fish",
+  "gear": "light",
+  "rods": [
+   "lure",
+   "pond"
+  ],
+  "fight": 1,
+  "locations": [
+   "riverside",
+   "dock",
+   "boulder",
+   "wreckage",
+   "midstream",
+   "river_bend"
+  ],
+  "times": [
+   "morning",
+   "afternoon"
+  ],
+  "weather": [
+   "sunny"
+  ],
+  "seasons": [
+   "summer",
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 4,
+   "rare": 8,
+   "epic": 20,
+   "legendary": 53
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "很好",
+  "unverified": [],
+  "pinyin": "jia fang man yi yu"
+ },
+ {
+  "id": "visual_kei_fish",
+  "name": {
+   "zh-CN": "视觉系"
+  },
+  "description": {
+   "zh-CN": "喜爱视觉系美学的鱼，总想要变得更加华丽。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/visual_kei_fish",
+  "gear": "light",
+  "rods": [
+   "lure"
+  ],
+  "fight": 3,
+  "locations": [
+   "boulder",
+   "midstream",
+   "river_bend"
+  ],
+  "times": [
+   "after_midnight",
+   "afternoon"
+  ],
+  "weather": [
+   "sunny",
+   "foggy"
+  ],
+  "seasons": [
+   "spring",
+   "summer"
+  ],
+  "sell_price_treats": {
+   "standard": 3,
+   "uncommon": 7,
+   "rare": 17,
+   "epic": 40,
+   "legendary": 107
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "一般",
+  "unverified": [],
+  "pinyin": "shi jue xi"
+ },
+ {
+  "id": "chopstick_gar",
+  "name": {
+   "zh-CN": "筷子鳝"
+  },
+  "description": {
+   "zh-CN": "细长的尖嘴十分便利，不仅能够夹取食物，还能衔着小石子修建居所。它们甚至是鱼类中第一个为自己的嘴巴申请专利的族群。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/chopstick_gar",
+  "gear": "heavy",
+  "rods": [
+   "pond"
+  ],
+  "fight": 3,
+  "locations": [
+   "pond",
+   "ice_hole"
+  ],
+  "times": [
+   "dusk",
+   "night"
+  ],
+  "weather": [
+   "sunny",
+   "heavy_snow"
+  ],
+  "seasons": [
+   "autumn",
+   "winter"
+  ],
+  "sell_price_treats": {
+   "standard": 3,
+   "uncommon": 7,
+   "rare": 17,
+   "epic": 40,
+   "legendary": 107
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "良好",
+  "unverified": [],
+  "pinyin": "kuai zi shan"
+ },
+ {
+  "id": "fan_shrimp",
+  "name": {
+   "zh-CN": "粉丝虾"
+  },
+  "description": {
+   "zh-CN": "十分爱看拳击比赛的小虾米。虽然没有训练过，但是觉得自己很能打。不看比赛的时候，就在码头闲逛。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/fan_shrimp",
+  "gear": "light",
+  "rods": [
+   "lure",
+   "pond",
+   "simple"
+  ],
+  "fight": 1,
+  "locations": [
+   "riverside",
+   "dock",
+   "boulder",
+   "wreckage",
+   "midstream",
+   "river_bend"
+  ],
+  "times": [
+   "morning",
+   "afternoon"
+  ],
+  "weather": [
+   "sunny",
+   "foggy"
+  ],
+  "seasons": [
+   "summer",
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 4,
+   "rare": 8,
+   "epic": 20,
+   "legendary": 53
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "很好",
+  "unverified": [],
+  "pinyin": "fen si xia"
+ },
+ {
+  "id": "bold_redline_fish",
+  "name": {
+   "zh-CN": "粗红线"
+  },
+  "description": {
+   "zh-CN": "身侧被一道红线划过的鱼，那条线被认为是它命运的刻痕，走到哪儿都有人想解读它的意义，曾衍生出几十种不同的学说。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/bold_redline_fish",
+  "gear": "light",
+  "rods": [
+   "lure",
+   "pond",
+   "simple"
+  ],
+  "fight": 1,
+  "locations": [
+   "pond",
+   "ice_hole"
+  ],
+  "times": [
+   "dawn",
+   "dusk"
+  ],
+  "weather": [
+   "foggy",
+   "light_snow"
+  ],
+  "seasons": [
+   "autumn",
+   "winter"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 4,
+   "rare": 8,
+   "epic": 20,
+   "legendary": 53
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "极佳",
+  "unverified": [],
+  "pinyin": "cu hong xian"
+ },
+ {
+  "id": "arhat_fish",
+  "name": {
+   "zh-CN": "罗汉鱼"
+  },
+  "description": {
+   "zh-CN": "据说吃下这种鱼的人要么获得永生，要么当场毙命。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/arhat_fish",
+  "gear": "heavy",
+  "rods": [
+   "lure"
+  ],
+  "fight": 6,
+  "locations": [
+   "riverside"
+  ],
+  "times": [
+   "morning",
+   "afternoon"
+  ],
+  "weather": [
+   "sunny",
+   "foggy"
+  ],
+  "seasons": [
+   "spring",
+   "summer"
+  ],
+  "sell_price_treats": {
+   "standard": 6,
+   "uncommon": 13,
+   "rare": 31,
+   "epic": 75,
+   "legendary": 203
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "较低",
+  "unverified": [],
+  "pinyin": "luo han yu"
+ },
+ {
+  "id": "whisker_fish",
+  "name": {
+   "zh-CN": "美髯公"
+  },
+  "description": {
+   "zh-CN": "一直撇着大嘴，看起来很不好相处的鱼。其实只是在等着你夸夸它们引以为傲的胡须。听到赞美时，会咧嘴傻笑。夜晚常在沉船附近出没。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/whisker_fish",
+  "gear": "heavy",
+  "rods": [
+   "lure"
+  ],
+  "fight": 2,
+  "locations": [
+   "boulder",
+   "wreckage",
+   "midstream",
+   "river_bend"
+  ],
+  "times": [
+   "after_midnight",
+   "dawn"
+  ],
+  "weather": [
+   "sunny",
+   "foggy"
+  ],
+  "seasons": [
+   "summer",
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 5,
+   "rare": 12,
+   "epic": 28,
+   "legendary": 76
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "良好",
+  "unverified": [],
+  "pinyin": "mei ran gong"
+ },
+ {
+  "id": "tutu_balletfish",
+  "name": {
+   "zh-CN": "芭蕾蓬蓬鱼"
+  },
+  "description": {
+   "zh-CN": "柔软轻盈的鱼尾酷似芭蕾舞裙，由此得名。舞技精湛的个体才能出演反派角色，换上艳丽夸张的妆容。习惯在河中央迎着阳光起舞，因此白天常能见到它们。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/tutu_balletfish",
+  "gear": "light",
+  "rods": [
+   "lure",
+   "pond"
+  ],
+  "fight": 1,
+  "locations": [
+   "riverside",
+   "dock",
+   "boulder",
+   "wreckage",
+   "midstream",
+   "river_bend"
+  ],
+  "times": [
+   "morning",
+   "afternoon"
+  ],
+  "weather": [
+   "sunny"
+  ],
+  "seasons": [
+   "summer",
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 4,
+   "rare": 8,
+   "epic": 20,
+   "legendary": 53
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "很好",
+  "unverified": [],
+  "pinyin": "ba lei peng peng yu"
+ },
+ {
+  "id": "blue_tears",
+  "name": {
+   "zh-CN": "蓝眼泪"
+  },
+  "description": {
+   "zh-CN": "有着海蓝宝石般美丽身躯的鱼类。据说有些大鲸鱼会雇佣一群海蓝宝鱼依附在自己身侧生活，远远看去就像戴着一串晶莹剔透的项链。只在冬季出没于冰洞。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/blue_tears",
+  "gear": "light",
+  "rods": [
+   "lure",
+   "pond",
+   "simple"
+  ],
+  "fight": 1,
+  "locations": [
+   "ice_hole"
+  ],
+  "times": [
+   "morning",
+   "afternoon"
+  ],
+  "weather": [
+   "light_snow",
+   "heavy_snow"
+  ],
+  "seasons": [
+   "winter"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 4,
+   "rare": 8,
+   "epic": 20,
+   "legendary": 53
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": null,
+  "unverified": [
+   "bite_tier_zh"
+  ],
+  "pinyin": "lan yan lei"
+ },
+ {
+  "id": "trunky_fish",
+  "name": {
+   "zh-CN": "象鼻鱼"
+  },
+  "description": {
+   "zh-CN": "一种因为嫉妒陆地大象的人气，而强行拉长嘴部的鱼类。本来想模仿大象喷水，但因为肺活量不足，每次只能尴尬地憋出几个气泡。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/trunky_fish",
+  "gear": null,
+  "rods": [],
+  "fight": 4,
+  "locations": [
+   "pond"
+  ],
+  "times": [
+   "after_midnight",
+   "night"
+  ],
+  "weather": [
+   "foggy",
+   "heavy_rain"
+  ],
+  "seasons": [
+   "spring",
+   "summer"
+  ],
+  "sell_price_treats": {
+   "standard": 4,
+   "uncommon": 9,
+   "rare": 22,
+   "epic": 54,
+   "legendary": 144
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": null,
+  "unverified": [
+   "bite_tier_zh",
+   "rods(站点数据里 rodTypes 为空)"
+  ],
+  "pinyin": "xiang bi yu"
+ },
+ {
+  "id": "louis_fish",
+  "name": {
+   "zh-CN": "路易鱼"
+  },
+  "description": {
+   "zh-CN": "体表遍布着象征富贵奢华的纹样，性格虚荣的族群，部分个体会发出驴叫。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/louis_fish",
+  "gear": "light",
+  "rods": [
+   "pond"
+  ],
+  "fight": 2,
+  "locations": [
+   "pond",
+   "ice_hole"
+  ],
+  "times": [
+   "dawn",
+   "afternoon"
+  ],
+  "weather": [
+   "sunny",
+   "heavy_snow"
+  ],
+  "seasons": [
+   "autumn",
+   "winter"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 5,
+   "rare": 12,
+   "epic": 28,
+   "legendary": 76
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "很好",
+  "unverified": [],
+  "pinyin": "lu yi yu"
+ },
+ {
+  "id": "rad_bass",
+  "name": {
+   "zh-CN": "辐射鲈"
+  },
+  "description": {
+   "zh-CN": "从某个核实验秘密基地的下水道逃出生天的族群，经历过不同程度的辐射，外观因此发生了变化。也有幸存者未经实验就已逃脱，但愿它们的理智未受影响……常在午后出没于码头。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/rad_bass",
+  "gear": "heavy",
+  "rods": [
+   "lure",
+   "pond"
+  ],
+  "fight": 1,
+  "locations": [
+   "riverside",
+   "dock",
+   "boulder",
+   "wreckage",
+   "midstream",
+   "river_bend"
+  ],
+  "times": [
+   "afternoon",
+   "dusk"
+  ],
+  "weather": [
+   "sunny",
+   "foggy",
+   "light_snow"
+  ],
+  "seasons": [
+   "spring",
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 4,
+   "rare": 8,
+   "epic": 20,
+   "legendary": 53
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "很好",
+  "unverified": [],
+  "pinyin": "fu she lu"
+ },
+ {
+  "id": "golden_frog",
+  "name": {
+   "zh-CN": "金蛙"
+  },
+  "description": {
+   "zh-CN": "成功长大为蛙形态的幸运儿，体表会慢慢积累黄金般的光芒。午后常在岸边嬉戏。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/golden_frog",
+  "gear": "light",
+  "rods": [
+   "lure",
+   "pond",
+   "simple"
+  ],
+  "fight": 1,
+  "locations": [
+   "riverside",
+   "dock",
+   "boulder",
+   "wreckage",
+   "midstream",
+   "river_bend"
+  ],
+  "times": [
+   "afternoon",
+   "dusk"
+  ],
+  "weather": [
+   "sunny"
+  ],
+  "seasons": [
+   "spring",
+   "summer"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 4,
+   "rare": 8,
+   "epic": 20,
+   "legendary": 53
+  },
+  "rarity_names_zh": {
+   "standard": "蝌蚪宝宝",
+   "uncommon": "大蝌蚪",
+   "rare": "幼蛙",
+   "epic": "青蛙",
+   "legendary": "金蛙"
+  },
+  "rarity_descriptions_zh": {
+   "standard": "看起来像蝌蚪，但其实只有少数才能成功长大为蛙形态。蛙形态下，体表会慢慢积累黄金般的光芒。午后常在岸边嬉戏。",
+   "uncommon": "看起来像蝌蚪，但其实只有少数才能成功长大为蛙形态。蛙形态下，体表会慢慢积累黄金般的光芒。午后常在岸边嬉戏。",
+   "rare": "成功长大为蛙形态的幸运儿，体表会慢慢积累黄金般的光芒。午后常在岸边嬉戏。",
+   "epic": "成功长大为蛙形态的幸运儿，体表会慢慢积累黄金般的光芒。午后常在岸边嬉戏。",
+   "legendary": "成功长大为蛙形态的幸运儿，体表会慢慢积累黄金般的光芒。午后常在岸边嬉戏。"
+  },
+  "bite_tier_zh": "很好",
+  "unverified": [],
+  "pinyin": "jin wa"
+ },
+ {
+  "id": "money_pouch",
+  "name": {
+   "zh-CN": "钱袋"
+  },
+  "description": {
+   "zh-CN": "袋中装满了古老的骨状货币，不知今日价值几何？"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/money_pouch",
+  "gear": "light",
+  "rods": [
+   "lure"
+  ],
+  "fight": 3,
+  "locations": [
+   "dock",
+   "wreckage",
+   "river_bend"
+  ],
+  "times": [
+   "after_midnight",
+   "dawn"
+  ],
+  "weather": [
+   "sunny",
+   "foggy"
+  ],
+  "seasons": [
+   "summer",
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 3,
+   "uncommon": 7,
+   "rare": 16,
+   "epic": 40,
+   "legendary": 107
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "一般",
+  "unverified": [],
+  "pinyin": "qian dai"
+ },
+ {
+  "id": "po_fish",
+  "name": {
+   "zh-CN": "阿宝鱼"
+  },
+  "description": {
+   "zh-CN": "怀抱着功夫梦的胖乎乎的小鱼，爱吃馒头。因每天都在练习“饿虎扑食”而日渐发福，结果连低头想看到自己的尾巴都成了奢望。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/po_fish",
+  "gear": "light",
+  "rods": [
+   "pond"
+  ],
+  "fight": 3,
+  "locations": [
+   "pond"
+  ],
+  "times": [
+   "morning",
+   "afternoon"
+  ],
+  "weather": [
+   "sunny",
+   "light_rain"
+  ],
+  "seasons": [
+   "spring"
+  ],
+  "sell_price_treats": {
+   "standard": 3,
+   "uncommon": 7,
+   "rare": 16,
+   "epic": 40,
+   "legendary": 107
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": null,
+  "unverified": [
+   "bite_tier_zh"
+  ],
+  "pinyin": "a bao yu"
+ },
+ {
+  "id": "pottery_fish",
+  "name": {
+   "zh-CN": "陶艺鱼"
+  },
+  "description": {
+   "zh-CN": "身上记载着远古文明的纹样。曾用粘土涂满全身以躲避天敌，但随着生活逐渐安逸，这种伪装演变成了纯粹的自我彰显。为了争夺稀有的矿物颜料，它们甚至会大打出手。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/pottery_fish",
+  "gear": "heavy",
+  "rods": [
+   "lure",
+   "pond"
+  ],
+  "fight": 1,
+  "locations": [
+   "pond"
+  ],
+  "times": [
+   "dawn",
+   "night"
+  ],
+  "weather": [
+   "light_rain",
+   "heavy_rain"
+  ],
+  "seasons": [
+   "spring",
+   "summer"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 4,
+   "rare": 8,
+   "epic": 20,
+   "legendary": 53
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": null,
+  "unverified": [
+   "bite_tier_zh"
+  ],
+  "pinyin": "tao yi yu"
+ },
+ {
+  "id": "thunder_eel",
+  "name": {
+   "zh-CN": "雷鳗"
+  },
+  "description": {
+   "zh-CN": "这种鳗鱼其实非常害怕电闪雷鸣，夜里常躲在河湾的淤泥中，身上的保护色与环境融为一体。据说偶尔有勇敢的个体尝试了大胆直面风雨雷电，反而发生了积极变异，外表变得华丽异常。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/thunder_eel",
+  "gear": "heavy",
+  "rods": [
+   "lure"
+  ],
+  "fight": 4,
+  "locations": [
+   "wreckage",
+   "river_bend"
+  ],
+  "times": [
+   "after_midnight",
+   "dawn"
+  ],
+  "weather": [
+   "sunny",
+   "foggy"
+  ],
+  "seasons": [
+   "autumn",
+   "winter"
+  ],
+  "sell_price_treats": {
+   "standard": 4,
+   "uncommon": 9,
+   "rare": 22,
+   "epic": 54,
+   "legendary": 144
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "一般",
+  "unverified": [],
+  "pinyin": "lei man"
+ },
+ {
+  "id": "porcelain_fish",
+  "name": {
+   "zh-CN": "青瓷鱼"
+  },
+  "description": {
+   "zh-CN": "据说是一船沉没的上好瓷器成了精。大部分鱼只继承了碎片，看起来灰头土脸；只有那些拼凑完整的幸运儿，才能重现几百年前的绝世花纹。小心轻放，它们或许很保值。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/porcelain_fish",
+  "gear": null,
+  "rods": [],
+  "fight": 3,
+  "locations": [
+   "pond"
+  ],
+  "times": [
+   "morning",
+   "dusk"
+  ],
+  "weather": [
+   "foggy",
+   "heavy_rain"
+  ],
+  "seasons": [
+   "spring",
+   "summer"
+  ],
+  "sell_price_treats": {
+   "standard": 3,
+   "uncommon": 7,
+   "rare": 17,
+   "epic": 40,
+   "legendary": 107
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": null,
+  "unverified": [
+   "bite_tier_zh",
+   "rods(站点数据里 rodTypes 为空)"
+  ],
+  "pinyin": "qing ci yu"
+ },
+ {
+  "id": "pompadour_fish",
+  "name": {
+   "zh-CN": "飞机头"
+  },
+  "description": {
+   "zh-CN": "行事鲁莽、横冲直撞的小鱼，性格张扬又特立独行，闯祸是家常便饭。好在这副独特的身形让它们总能溜得飞快。只在冬季出没于冰洞。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/pompadour_fish",
+  "gear": "light",
+  "rods": [
+   "lure",
+   "pond",
+   "simple"
+  ],
+  "fight": 1,
+  "locations": [
+   "ice_hole"
+  ],
+  "times": [
+   "dawn",
+   "night"
+  ],
+  "weather": [
+   "sunny",
+   "foggy"
+  ],
+  "seasons": [
+   "winter"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 4,
+   "rare": 8,
+   "epic": 20,
+   "legendary": 53
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": null,
+  "unverified": [
+   "bite_tier_zh"
+  ],
+  "pinyin": "fei ji tou"
+ },
+ {
+  "id": "liar_fish",
+  "name": {
+   "zh-CN": "骗子鱼"
+  },
+  "description": {
+   "zh-CN": "喜爱欺骗的族群，说过越多的谎，体表越红。最后已经和最初的模样判若两鱼。夜里常在码头附近寻觅下一个被骗者。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/liar_fish",
+  "gear": "heavy",
+  "rods": [
+   "lure"
+  ],
+  "fight": 2,
+  "locations": [
+   "dock",
+   "boulder",
+   "wreckage",
+   "midstream"
+  ],
+  "times": [
+   "dawn",
+   "night"
+  ],
+  "weather": [
+   "foggy",
+   "light_snow",
+   "heavy_snow"
+  ],
+  "seasons": [
+   "summer",
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 5,
+   "rare": 12,
+   "epic": 28,
+   "legendary": 76
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "良好",
+  "unverified": [],
+  "pinyin": "pian zi yu"
+ },
+ {
+  "id": "ghostblade_fish",
+  "name": {
+   "zh-CN": "鬼刀鱼"
+  },
+  "description": {
+   "zh-CN": "这种鱼的祖先被利刃划伤之后，后代中竟出现了酷似匕首的造型，誓要某一天报仇雪恨。但后来可能忘记了。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/ghostblade_fish",
+  "gear": "heavy",
+  "rods": [
+   "lure",
+   "pond"
+  ],
+  "fight": 1,
+  "locations": [
+   "riverside",
+   "dock",
+   "boulder",
+   "wreckage",
+   "midstream",
+   "river_bend"
+  ],
+  "times": [
+   "after_midnight",
+   "night"
+  ],
+  "weather": [
+   "foggy",
+   "light_snow"
+  ],
+  "seasons": [
+   "summer",
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 4,
+   "rare": 8,
+   "epic": 20,
+   "legendary": 53
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "很好",
+  "unverified": [],
+  "pinyin": "gui dao yu"
+ },
+ {
+  "id": "ghostooth_fish",
+  "name": {
+   "zh-CN": "鬼牙鱼"
+  },
+  "description": {
+   "zh-CN": "这种鱼的祖先被不明机械砸中之后，后代中竟出现了与机械类似的绿光，誓要某一天寻回不明机械。但后来可能忘记了。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/ghostooth_fish",
+  "gear": "heavy",
+  "rods": [
+   "lure",
+   "pond"
+  ],
+  "fight": 1,
+  "locations": [
+   "pond",
+   "ice_hole"
+  ],
+  "times": [
+   "after_midnight",
+   "night"
+  ],
+  "weather": [
+   "foggy",
+   "light_snow"
+  ],
+  "seasons": [
+   "autumn",
+   "winter"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 4,
+   "rare": 8,
+   "epic": 20,
+   "legendary": 53
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "极佳",
+  "unverified": [],
+  "pinyin": "gui ya yu"
+ },
+ {
+  "id": "ghostiger_fish",
+  "name": {
+   "zh-CN": "鬼虎鱼"
+  },
+  "description": {
+   "zh-CN": "这种鱼的祖先被老虎咬过之后，后代中竟出现了酷似虎皮的斑纹，誓要某一天报仇雪恨。但后来可能忘记了。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/ghostiger_fish",
+  "gear": "heavy",
+  "rods": [
+   "lure",
+   "pond"
+  ],
+  "fight": 1,
+  "locations": [
+   "riverside",
+   "dock",
+   "boulder",
+   "wreckage",
+   "midstream",
+   "river_bend"
+  ],
+  "times": [
+   "dawn",
+   "dusk"
+  ],
+  "weather": [
+   "light_snow",
+   "heavy_snow"
+  ],
+  "seasons": [
+   "autumn",
+   "winter"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 4,
+   "rare": 8,
+   "epic": 20,
+   "legendary": 53
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "极佳",
+  "unverified": [],
+  "pinyin": "gui hu yu"
+ },
+ {
+  "id": "coco_fish",
+  "name": {
+   "zh-CN": "鳄霸鱼"
+  },
+  "description": {
+   "zh-CN": "名如其鱼，据说和鳄霸五百年前是一家。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/coco_fish",
+  "gear": "heavy",
+  "rods": [
+   "lure"
+  ],
+  "fight": 3,
+  "locations": [
+   "wreckage",
+   "midstream",
+   "river_bend"
+  ],
+  "times": [
+   "after_midnight",
+   "night"
+  ],
+  "weather": [
+   "light_snow",
+   "heavy_snow"
+  ],
+  "seasons": [
+   "autumn",
+   "winter"
+  ],
+  "sell_price_treats": {
+   "standard": 3,
+   "uncommon": 7,
+   "rare": 17,
+   "epic": 40,
+   "legendary": 107
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "一般",
+  "unverified": [],
+  "pinyin": "e ba yu"
+ },
+ {
+  "id": "loachie",
+  "name": {
+   "zh-CN": "鳅鳅鱼"
+  },
+  "description": {
+   "zh-CN": "逃避型鱼格，一旦察觉到被关注就会立即钻进泥里，假装不存在。因为太会玩消失，至今没人真正数清过它们的数量。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/loachie",
+  "gear": "light",
+  "rods": [
+   "lure",
+   "pond",
+   "simple"
+  ],
+  "fight": 1,
+  "locations": [
+   "pond",
+   "ice_hole"
+  ],
+  "times": [
+   "after_midnight",
+   "night"
+  ],
+  "weather": [
+   "sunny",
+   "foggy"
+  ],
+  "seasons": [
+   "summer",
+   "autumn"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 4,
+   "rare": 8,
+   "epic": 20,
+   "legendary": 53
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "极佳",
+  "unverified": [],
+  "pinyin": "qiu qiu yu"
+ },
+ {
+  "id": "quack_fish",
+  "name": {
+   "zh-CN": "黄鸭叫"
+  },
+  "description": {
+   "zh-CN": "梦想成为鸭子的一种鱼，喜欢模仿嘎嘎的叫声。夜里巨石附近传来的鸭声，大抵是它们在大聊八卦。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/quack_fish",
+  "gear": "heavy",
+  "rods": [
+   "lure",
+   "pond"
+  ],
+  "fight": 1,
+  "locations": [
+   "riverside",
+   "dock",
+   "boulder",
+   "wreckage",
+   "midstream",
+   "river_bend"
+  ],
+  "times": [
+   "after_midnight",
+   "night"
+  ],
+  "weather": [
+   "sunny",
+   "foggy"
+  ],
+  "seasons": [
+   "spring",
+   "summer"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 4,
+   "rare": 8,
+   "epic": 20,
+   "legendary": 53
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": "很好",
+  "unverified": [],
+  "pinyin": "huang ya jiao"
+ },
+ {
+  "id": "black_crucian",
+  "name": {
+   "zh-CN": "黑鲫鱼"
+  },
+  "description": {
+   "zh-CN": "嫌弃自己灰扑扑的保护色，于是疯狂在河底的云母石上摩擦身体。大多数只是在鳞片上留下了伤痕，但极少数毅力惊人的个体，竟然真的把鳞片磨得像镜子一样反光。"
+  },
+  "is_new": false,
+  "detail_url": "https://animals.party/zh-CN/fish/black_crucian",
+  "gear": "light",
+  "rods": [
+   "lure",
+   "pond",
+   "simple"
+  ],
+  "fight": 1,
+  "locations": [
+   "pond"
+  ],
+  "times": [
+   "dawn",
+   "morning"
+  ],
+  "weather": [
+   "sunny",
+   "light_rain"
+  ],
+  "seasons": [
+   "spring",
+   "summer"
+  ],
+  "sell_price_treats": {
+   "standard": 2,
+   "uncommon": 4,
+   "rare": 8,
+   "epic": 20,
+   "legendary": 53
+  },
+  "rarity_names_zh": null,
+  "rarity_descriptions_zh": null,
+  "bite_tier_zh": null,
+  "unverified": [
+   "bite_tier_zh"
+  ],
+  "pinyin": "hei ji yu"
+ }
+]

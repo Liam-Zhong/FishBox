@@ -1,0 +1,26 @@
+[
+ {
+  "id": "dawn",
+  "zh-CN": "清晨"
+ },
+ {
+  "id": "morning",
+  "zh-CN": "上午"
+ },
+ {
+  "id": "afternoon",
+  "zh-CN": "下午"
+ },
+ {
+  "id": "dusk",
+  "zh-CN": "黄昏"
+ },
+ {
+  "id": "night",
+  "zh-CN": "深夜"
+ },
+ {
+  "id": "after_midnight",
+  "zh-CN": "凌晨"
+ }
+]

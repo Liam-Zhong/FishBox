@@ -1,0 +1,22 @@
+[
+ {
+  "id": "standard",
+  "zh-CN": "标准"
+ },
+ {
+  "id": "uncommon",
+  "zh-CN": "非凡"
+ },
+ {
+  "id": "rare",
+  "zh-CN": "稀有"
+ },
+ {
+  "id": "epic",
+  "zh-CN": "史诗"
+ },
+ {
+  "id": "legendary",
+  "zh-CN": "传奇"
+ }
+]

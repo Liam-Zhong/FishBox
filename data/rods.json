@@ -1,0 +1,155 @@
+[
+ {
+  "id": "green_bamboo",
+  "name": "新竹",
+  "kind": "lure",
+  "gear": "light",
+  "order": 1,
+  "fish_count": 19,
+  "price_treats": 200
+ },
+ {
+  "id": "hawthorn",
+  "name": "山楂",
+  "kind": "lure",
+  "gear": "light",
+  "order": 2,
+  "fish_count": 26,
+  "price_treats": 350
+ },
+ {
+  "id": "golden_ripple",
+  "name": "金波",
+  "kind": "lure",
+  "gear": "light",
+  "order": 3,
+  "fish_count": 26,
+  "price_treats": 700
+ },
+ {
+  "id": "icicle",
+  "name": "冰凌",
+  "kind": "lure",
+  "gear": "light",
+  "order": 4,
+  "fish_count": 30,
+  "price_treats": 2300
+ },
+ {
+  "id": "humble",
+  "name": "寻常",
+  "kind": "lure",
+  "gear": "heavy",
+  "order": 1,
+  "fish_count": 13,
+  "price_treats": 700
+ },
+ {
+  "id": "elderwood",
+  "name": "接骨",
+  "kind": "lure",
+  "gear": "heavy",
+  "order": 2,
+  "fish_count": 19,
+  "price_treats": 900
+ },
+ {
+  "id": "totem",
+  "name": "图腾",
+  "kind": "lure",
+  "gear": "heavy",
+  "order": 3,
+  "fish_count": 23,
+  "price_treats": 1400
+ },
+ {
+  "id": "jade_bamboo",
+  "name": "玉竹",
+  "kind": "lure",
+  "gear": "heavy",
+  "order": 4,
+  "fish_count": 25,
+  "price_treats": 2100
+ },
+ {
+  "id": "golden_tide",
+  "name": "金潮",
+  "kind": "lure",
+  "gear": "heavy",
+  "order": 5,
+  "fish_count": 25,
+  "price_treats": 2450
+ },
+ {
+  "id": "frost",
+  "name": "冰霜",
+  "kind": "lure",
+  "gear": "heavy",
+  "order": 6,
+  "fish_count": 28,
+  "price_treats": 3700
+ },
+ {
+  "id": "toy_truck",
+  "name": "大黄车",
+  "kind": "lure",
+  "gear": "heavy",
+  "order": 7,
+  "fish_count": 32,
+  "price_treats": 3950
+ },
+ {
+  "id": "first_snow",
+  "name": "初雪",
+  "kind": "pond",
+  "gear": "light",
+  "order": 1,
+  "fish_count": 18,
+  "price_treats": 450
+ },
+ {
+  "id": "ducky",
+  "name": "小黄鸭",
+  "kind": "pond",
+  "gear": "light",
+  "order": 2,
+  "fish_count": 20,
+  "price_treats": 1100
+ },
+ {
+  "id": "papyrus",
+  "name": "莎草",
+  "kind": "pond",
+  "gear": "light",
+  "order": 3,
+  "fish_count": 19,
+  "price_treats": 1100
+ },
+ {
+  "id": "deep_winter",
+  "name": "岁寒",
+  "kind": "pond",
+  "gear": "heavy",
+  "order": 1,
+  "fish_count": 13,
+  "price_treats": 900
+ },
+ {
+  "id": "moss",
+  "name": "苔藓",
+  "kind": "pond",
+  "gear": "heavy",
+  "order": 2,
+  "fish_count": 14,
+  "price_treats": 1600
+ },
+ {
+  "id": "stick",
+  "name": "树杈子",
+  "kind": "simple",
+  "gear": "light",
+  "order": 1,
+  "fish_count": 11,
+  "price_treats": null
+ }
+]

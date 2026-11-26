@@ -1,0 +1,35 @@
+{
+ "dataVersion": 6,
+ "generatedAt": "2026-11-12",
+ "source": "https://animals.party/zh-CN/fish (HTML 渲染文本，非官方 API)",
+ "fishCount": 76,
+ "readPages": [
+  "/zh-CN/fish?season=autumn(63条)",
+  "/zh-CN/fish/season/spring(30)",
+  "/zh-CN/fish/season/summer(44)",
+  "/zh-CN/fish/season/winter(23)",
+  "/zh-CN/fish/bold_redline_fish(详情)"
+ ],
+ "notCrossChecked": [
+  "biteTier 来源（payload 里没有）",
+  "/gear",
+  "/baits",
+  "/legal",
+  "地图"
+ ],
+ "primarySource": "https://animals.party/zh-CN/fish/shimmerfin/_payload.json (Nuxt payload，key=fish-list-zh-CN，由用户提供)",
+ "crossCheck": "payload 解码 76 条，与此前抓取的 HTML 数据在名称/地点/时间/天气/季节/鱼竿/isNew 上 0 处不一致",
+ "imagePattern": "https://animals.party/images/fish/{id}_{rarity}.webp  rarity=standard|uncommon|rare|epic|legendary",
+ "imageStatus": "规律仅在 bold_redline_fish 详情页确认；其余鱼未逐一验证；版权属 Source Technology，仅限个人学习使用，App 运行时加载，不随包分发",
+ "fightScale": "1..6，1=收线搏斗轻松（已确认）；其余档位名称未确认",
+ "gearValues": {
+  "light": "轻型（已确认）",
+  "heavy": "推测为重型，未确认"
+ },
+ "pinyin": "fish.json 的 pinyin 字段由人工标注（非站点数据），用于按首字母排序，请抽查多音字",
+ "qualityLabels": "App 内统一显示为 标准/非凡/稀有/史诗/传奇（站点原文为 普通/不寻常/稀有/史诗/传说），个别鱼的专属品质名不再显示",
+ "note_rods": "fish.json 的 rods 为站点原始数据，原样保留。App 的『鱼竿』筛选按地点推导：locations.json 里每个地点标注使用的鱼竿类型（池塘、冰洞=池钓；其余=路亚），鱼出没的任一地点对应的鱼竿即为该鱼的鱼竿。该对应关系是项目维护者的约定，需以游戏为准，可直接修改 locations.json。",
+ "gameOrder": "game_order.json：游戏内图鉴的页签与顺序（用户提供，76 条逐一核对无遗漏无重复）。",
+ "rods": "rods.json：游戏里的 17 把具体鱼竿（来自站点 /zh-CN/gear）。fish_rods.json：每条鱼可用的具体鱼竿（从各鱼详情页的『可用鱼竿』抓取，由 tools/fetch_fish_rods 生成；当前只预置 3 条）。",
+ "gear": "fish.json 的 gear（light/heavy）= 站点的『配件』分类（轻型/重型），原样保留，用于『配件』筛选。"
+}

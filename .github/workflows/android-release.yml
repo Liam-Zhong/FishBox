@@ -1,0 +1,131 @@
+name: Android release APK
+
+on:
+  push:
+    branches: [main, master]
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: android-release-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    env:
+      ANDROID_KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
+      ANDROID_KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+      ANDROID_KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+      ANDROID_KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v7
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v4
+        with:
+          packages: 'platform-tools platforms;android-36 build-tools;36.0.0'
+
+      - name: Set up Gradle 8.13
+        uses: gradle/actions/setup-gradle@v6
+        with:
+          gradle-version: '8.13'
+
+      # 构建前从站点补全数据。失败不会中断构建：fish_rods.json 抓取不完整时保留仓库里的旧文件，
+      # 缺图标的筛选项只是不显示图标。
+      - name: Fetch fish rods from animals.party
+        continue-on-error: true
+        run: python3 tools/site_data.py rods
+
+      - name: Download filter icons listed in data/ui_icon_sources.json
+        continue-on-error: true
+        run: python3 tools/site_data.py icons
+
+      - name: List candidate filter-icon URLs (manual runs only, report only)
+        if: github.event_name == 'workflow_dispatch'
+        continue-on-error: true
+        run: python3 tools/site_data.py discover
+
+      - name: Restore persistent release keystore
+        shell: bash
+        run: |
+          set -euo pipefail
+          : "${ANDROID_KEYSTORE_BASE64:?Add KEYSTORE_BASE64 to repository Actions secrets}"
+          : "${ANDROID_KEYSTORE_PASSWORD:?Add KEYSTORE_PASSWORD to repository Actions secrets}"
+          : "${ANDROID_KEY_ALIAS:?Add KEY_ALIAS to repository Actions secrets}"
+          : "${ANDROID_KEY_PASSWORD:?Add KEY_PASSWORD to repository Actions secrets}"
+
+          KEYSTORE_FILE="$RUNNER_TEMP/fishbox-release.p12"
+          printf '%s' "$ANDROID_KEYSTORE_BASE64" | base64 --decode > "$KEYSTORE_FILE"
+          test -s "$KEYSTORE_FILE"
+          chmod 600 "$KEYSTORE_FILE"
+          echo "ANDROID_KEYSTORE_PATH=$KEYSTORE_FILE" >> "$GITHUB_ENV"
+
+      - name: Build signed release APK
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          CI_VERSION_CODE=$((GITHUB_RUN_NUMBER + 1))
+
+          echo "Building FishBox"
+          echo "Version code: $CI_VERSION_CODE"
+
+          gradle --no-daemon --stacktrace clean assembleRelease \
+            -PrequireReleaseSigning=true \
+            -PciVersionCode="$CI_VERSION_CODE"
+
+      - name: Give APK a versioned filename
+        id: package_apk
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          SOURCE_APK="app/build/outputs/apk/release/app-release.apk"
+
+          test -s "$SOURCE_APK"
+
+          VERSION_INFO=$(apkanalyzer manifest version-name "$SOURCE_APK")
+          VERSION_CODE=$(apkanalyzer manifest version-code "$SOURCE_APK")
+
+          echo "APK version name: $VERSION_INFO"
+          echo "APK version code: $VERSION_CODE"
+
+          mkdir -p dist
+
+          APK_NAME="FishBox-v${VERSION_INFO}-build${VERSION_CODE}.apk"
+
+          cp "$SOURCE_APK" "dist/$APK_NAME"
+
+          echo "artifact_name=FishBox-v${VERSION_INFO}-build${VERSION_CODE}" >> "$GITHUB_OUTPUT"
+
+          echo "Built dist/$APK_NAME"
+
+      - name: Upload signed APK artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: ${{ steps.package_apk.outputs.artifact_name }}
+          path: dist/*.apk
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Publish GitHub Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*.apk
+          generate_release_notes: true
+          fail_on_unmatched_files: true
